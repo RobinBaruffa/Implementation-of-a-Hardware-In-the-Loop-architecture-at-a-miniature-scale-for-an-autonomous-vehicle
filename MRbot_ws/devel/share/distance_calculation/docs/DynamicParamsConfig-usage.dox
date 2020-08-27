@@ -1,0 +1,8 @@
+\subsubsection usage Usage
+\verbatim
+<node name="distance_calculation" pkg="distance_calculation" type="distance_calculation">
+  <param name="distance_setpoint" type="double" value="7.0" />
+  <param name="angle_setpoint" type="double" value="0.0" />
+</node>
+\endverbatim
+

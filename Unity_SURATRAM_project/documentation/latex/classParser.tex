@@ -1,0 +1,318 @@
+\hypertarget{classParser}{}\section{Parser Class Reference}
+\label{classParser}\index{Parser@{Parser}}
+
+
+Class providing an abstraction for the parsing of O\+SM file.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParser_afc8c6d06d662fe845cf2bc614107adba}{Parser} (string file)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+int \hyperlink{classParser_a01de6e0804b215480d23b0b6ba23105d}{next} (int i, J\+S\+O\+N\+Node n, Func$<$ J\+S\+O\+N\+Node, bool $>$ cmp)
+\begin{DoxyCompactList}\small\item\em Function to go to the next occurence of the condition cmp. \end{DoxyCompactList}\item 
+int \hyperlink{classParser_a7099a12c9a99780c36305dae1541c6bf}{get\+Last\+Index} (J\+S\+O\+N\+Node n)
+\begin{DoxyCompactList}\small\item\em This function returns the last index of the J\+S\+O\+N\+Node \textquotesingle{}n\textquotesingle{}. \end{DoxyCompactList}\item 
+int \hyperlink{classParser_a11cf257955d37fc10f3a003011e426b1}{find\+Node} (ulong node)
+\begin{DoxyCompactList}\small\item\em Function to retrieve a node index by its id. \end{DoxyCompactList}\item 
+int \hyperlink{classParser_a6c935988689e10f4d853a121f8325779}{find\+Node} (string s)
+\begin{DoxyCompactList}\small\item\em Function to retrieve a node index by its id. \end{DoxyCompactList}\item 
+int \hyperlink{classParser_a0b51b15e7a8b0193be93d75074d23b24}{find\+Way} (ulong way)
+\begin{DoxyCompactList}\small\item\em Function to retrieve a way index by its id. \end{DoxyCompactList}\item 
+int \hyperlink{classParser_aa3df51fa8a42dbacf0eef33290fa5735}{find\+Way} (string s)
+\begin{DoxyCompactList}\small\item\em Function to retrieve a way index by its id. \end{DoxyCompactList}\item 
+int \hyperlink{classParser_ae7b8729f987b4e453936a50c3a6fafde}{get\+Orientation} (int w1, int w2)
+\begin{DoxyCompactList}\small\item\em Function that returns the orientation to go from the way1 to the way2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classParser_a43e10a5d0cd10c4fdc3f00d329f2663e}{begin\+Node}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Index in the J\+S\+ON of the first appearance of nodes.\end{DoxyCompactList}\item 
+int \hyperlink{classParser_a94de8556b93d0d47a9d86fd4e11c59e5}{end\+Node}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Index in the J\+S\+ON of the last appearance of nodes.\end{DoxyCompactList}\item 
+int \hyperlink{classParser_a08f610cc9cddb8527b5925faeb2bbb3c}{begin\+Way}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Index in the J\+S\+ON of the first appearance of a ways.\end{DoxyCompactList}\item 
+int \hyperlink{classParser_a4df695e129b4f2ea2246a09aa1efa7d9}{end\+Way}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Index in the J\+S\+ON of the last appearance of ways.\end{DoxyCompactList}\item 
+J\+S\+O\+N\+Node \hyperlink{classParser_a4197d6b1f20ecece4727304bd48919b2}{N}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Variable storing the arborescence of the J\+S\+ON file. With the Simple J\+S\+ON system.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classParser_a43282c4f0874c45a64a6daf25cae6e31}{init\+Delimiters} ()
+\begin{DoxyCompactList}\small\item\em Function that moves through the J\+S\+ON \hyperlink{classParser}{Parser} to determine and store the differents sections (nodes section, ways section (after there is the relation section)). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classParser_a0b9210ce3e141f6c36ee800e6301e477}{nb\+Nodes}
+\begin{DoxyCompactList}\small\item\em Variable storing the number of nodes.\end{DoxyCompactList}\item 
+int \hyperlink{classParser_a641ee642470f19ec1cb79b74f8c70288}{nb\+Ways}
+\begin{DoxyCompactList}\small\item\em Variable storing the number of ways.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class providing an abstraction for the parsing of O\+SM file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & $<$+param+$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$+returns+$>$
+\end{DoxyReturn}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParser_afc8c6d06d662fe845cf2bc614107adba}\label{classParser_afc8c6d06d662fe845cf2bc614107adba}} 
+\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily Parser.\+Parser (\begin{DoxyParamCaption}\item[{string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The path of the O\+SM file\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classParser_a11cf257955d37fc10f3a003011e426b1}\label{classParser_a11cf257955d37fc10f3a003011e426b1}} 
+\index{Parser@{Parser}!find\+Node@{find\+Node}}
+\index{find\+Node@{find\+Node}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{find\+Node()}{findNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Parser.\+find\+Node (\begin{DoxyParamCaption}\item[{ulong}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to retrieve a node index by its id. 
+
+Uses dichotomy, complexity of ( log2(\+N) ). The node must exist inside the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Id of the node to find.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the node
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_a6c935988689e10f4d853a121f8325779}\label{classParser_a6c935988689e10f4d853a121f8325779}} 
+\index{Parser@{Parser}!find\+Node@{find\+Node}}
+\index{find\+Node@{find\+Node}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{find\+Node()}{findNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Parser.\+find\+Node (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to retrieve a node index by its id. 
+
+Uses dichotomy, complexity of ( log2(\+N) ). The node must exist inside the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Id of the node to find.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the node
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_a0b51b15e7a8b0193be93d75074d23b24}\label{classParser_a0b51b15e7a8b0193be93d75074d23b24}} 
+\index{Parser@{Parser}!find\+Way@{find\+Way}}
+\index{find\+Way@{find\+Way}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{find\+Way()}{findWay()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Parser.\+find\+Way (\begin{DoxyParamCaption}\item[{ulong}]{way }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to retrieve a way index by its id. 
+
+Uses dichotomy, complexity of ( log2(\+N) ). The way must exist inside the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em way} & Id of the way to find.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the way.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_aa3df51fa8a42dbacf0eef33290fa5735}\label{classParser_aa3df51fa8a42dbacf0eef33290fa5735}} 
+\index{Parser@{Parser}!find\+Way@{find\+Way}}
+\index{find\+Way@{find\+Way}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{find\+Way()}{findWay()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Parser.\+find\+Way (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to retrieve a way index by its id. 
+
+Uses dichotomy, complexity of ( log2(\+N) ). The way must exist inside the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Id of the way to find.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the index of the way.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_a7099a12c9a99780c36305dae1541c6bf}\label{classParser_a7099a12c9a99780c36305dae1541c6bf}} 
+\index{Parser@{Parser}!get\+Last\+Index@{get\+Last\+Index}}
+\index{get\+Last\+Index@{get\+Last\+Index}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{get\+Last\+Index()}{getLastIndex()}}
+{\footnotesize\ttfamily int Parser.\+get\+Last\+Index (\begin{DoxyParamCaption}\item[{J\+S\+O\+N\+Node}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function returns the last index of the J\+S\+O\+N\+Node \textquotesingle{}n\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The J\+S\+O\+N\+Node to find the last index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The last index of n.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_ae7b8729f987b4e453936a50c3a6fafde}\label{classParser_ae7b8729f987b4e453936a50c3a6fafde}} 
+\index{Parser@{Parser}!get\+Orientation@{get\+Orientation}}
+\index{get\+Orientation@{get\+Orientation}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{get\+Orientation()}{getOrientation()}}
+{\footnotesize\ttfamily int Parser.\+get\+Orientation (\begin{DoxyParamCaption}\item[{int}]{w1,  }\item[{int}]{w2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that returns the orientation to go from the way1 to the way2. 
+
+Do not handle middle way intersections.
+
+
+\begin{DoxyParams}{Parameters}
+{\em w1} & The first way.\\
+\hline
+{\em w2} & The second way.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if increasing, -\/1 if decreasing order.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParser_a43282c4f0874c45a64a6daf25cae6e31}\label{classParser_a43282c4f0874c45a64a6daf25cae6e31}} 
+\index{Parser@{Parser}!init\+Delimiters@{init\+Delimiters}}
+\index{init\+Delimiters@{init\+Delimiters}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{init\+Delimiters()}{initDelimiters()}}
+{\footnotesize\ttfamily void Parser.\+init\+Delimiters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Function that moves through the J\+S\+ON \hyperlink{classParser}{Parser} to determine and store the differents sections (nodes section, ways section (after there is the relation section)). 
+
+\mbox{\Hypertarget{classParser_a01de6e0804b215480d23b0b6ba23105d}\label{classParser_a01de6e0804b215480d23b0b6ba23105d}} 
+\index{Parser@{Parser}!next@{next}}
+\index{next@{next}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily int Parser.\+next (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{J\+S\+O\+N\+Node}]{n,  }\item[{Func$<$ J\+S\+O\+N\+Node, bool $>$}]{cmp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to go to the next occurence of the condition cmp. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The starting index for iterating.\\
+\hline
+{\em n} & The J\+S\+O\+N\+Node shortened. Iterate only from the root of \textquotesingle{}n\textquotesingle{}.\\
+\hline
+{\em cmp} & Function that checks the value contained inside a child and returns true or false.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the next occurence.
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classParser_a0b9210ce3e141f6c36ee800e6301e477}\label{classParser_a0b9210ce3e141f6c36ee800e6301e477}} 
+\index{Parser@{Parser}!nb\+Nodes@{nb\+Nodes}}
+\index{nb\+Nodes@{nb\+Nodes}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{nb\+Nodes}{nbNodes}}
+{\footnotesize\ttfamily int Parser.\+nb\+Nodes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable storing the number of nodes.
+
+\mbox{\Hypertarget{classParser_a641ee642470f19ec1cb79b74f8c70288}\label{classParser_a641ee642470f19ec1cb79b74f8c70288}} 
+\index{Parser@{Parser}!nb\+Ways@{nb\+Ways}}
+\index{nb\+Ways@{nb\+Ways}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{nb\+Ways}{nbWays}}
+{\footnotesize\ttfamily int Parser.\+nb\+Ways\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Variable storing the number of ways.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classParser_a43e10a5d0cd10c4fdc3f00d329f2663e}\label{classParser_a43e10a5d0cd10c4fdc3f00d329f2663e}} 
+\index{Parser@{Parser}!begin\+Node@{begin\+Node}}
+\index{begin\+Node@{begin\+Node}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{begin\+Node}{beginNode}}
+{\footnotesize\ttfamily int Parser.\+begin\+Node\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Index in the J\+S\+ON of the first appearance of nodes.
+
+\mbox{\Hypertarget{classParser_a08f610cc9cddb8527b5925faeb2bbb3c}\label{classParser_a08f610cc9cddb8527b5925faeb2bbb3c}} 
+\index{Parser@{Parser}!begin\+Way@{begin\+Way}}
+\index{begin\+Way@{begin\+Way}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{begin\+Way}{beginWay}}
+{\footnotesize\ttfamily int Parser.\+begin\+Way\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Index in the J\+S\+ON of the first appearance of a ways.
+
+\mbox{\Hypertarget{classParser_a94de8556b93d0d47a9d86fd4e11c59e5}\label{classParser_a94de8556b93d0d47a9d86fd4e11c59e5}} 
+\index{Parser@{Parser}!end\+Node@{end\+Node}}
+\index{end\+Node@{end\+Node}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{end\+Node}{endNode}}
+{\footnotesize\ttfamily int Parser.\+end\+Node\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Index in the J\+S\+ON of the last appearance of nodes.
+
+\mbox{\Hypertarget{classParser_a4df695e129b4f2ea2246a09aa1efa7d9}\label{classParser_a4df695e129b4f2ea2246a09aa1efa7d9}} 
+\index{Parser@{Parser}!end\+Way@{end\+Way}}
+\index{end\+Way@{end\+Way}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{end\+Way}{endWay}}
+{\footnotesize\ttfamily int Parser.\+end\+Way\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Index in the J\+S\+ON of the last appearance of ways.
+
+\mbox{\Hypertarget{classParser_a4197d6b1f20ecece4727304bd48919b2}\label{classParser_a4197d6b1f20ecece4727304bd48919b2}} 
+\index{Parser@{Parser}!N@{N}}
+\index{N@{N}!Parser@{Parser}}
+\subsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily J\+S\+O\+N\+Node Parser.\+N\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+Variable storing the arborescence of the J\+S\+ON file. With the Simple J\+S\+ON system.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+map\+Builder/\+Assets/\+Scripts/\+O\+S\+M\+Scripts/\hyperlink{Parser_8cs}{Parser.\+cs}\end{DoxyCompactItemize}

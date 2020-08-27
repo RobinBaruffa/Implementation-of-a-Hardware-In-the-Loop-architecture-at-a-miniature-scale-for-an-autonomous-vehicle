@@ -1,0 +1,8 @@
+prefix=/home/user/MRbot_ws/devel
+
+Name: mr_sensor_handler
+Description: Description of mr_sensor_handler
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime

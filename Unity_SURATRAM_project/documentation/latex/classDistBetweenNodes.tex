@@ -1,0 +1,159 @@
+\hypertarget{classDistBetweenNodes}{}\section{Dist\+Between\+Nodes Class Reference}
+\label{classDistBetweenNodes}\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+
+
+Abstract class to computes the distance between two Open\+Street\+Map(\+O\+S\+M) nodes.  
+
+
+
+
+Inheritance diagram for Dist\+Between\+Nodes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDistBetweenNodes__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dist\+Between\+Nodes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classDistBetweenNodes__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDistBetweenNodes_a1d84c0560c209da4cd0612ba8b198a71}{Dist\+Between\+Nodes} (\hyperlink{classParser}{Parser} \hyperlink{classDistBetweenNodes_a2a87914cc1b9e98fa17635950df55bd9}{p}, \hyperlink{classDistanceComputation}{Distance\+Computation} d)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\hyperlink{classDistBetweenNodes_a69841af034ea9d970333603afa458049}{Dist\+Between\+Nodes} (\hyperlink{classParser}{Parser} \hyperlink{classDistBetweenNodes_a2a87914cc1b9e98fa17635950df55bd9}{p})
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+virtual void \hyperlink{classDistBetweenNodes_a6a05019d7ec4797028e5e11611ff96d4}{init\+Relation} (int curr\+Relation)
+\begin{DoxyCompactList}\small\item\em Initialize the relation. Use it when you want to process a relation. \end{DoxyCompactList}\item 
+abstract float \hyperlink{classDistBetweenNodes_a2e27c4f9d851343d2d96e53864a841b7}{calculate} (string node1, string node2, ref List$<$ ulong $>$ path)
+\begin{DoxyCompactList}\small\item\em Calculate the distance between 2 nodes \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDistanceComputation}{Distance\+Computation} \hyperlink{classDistBetweenNodes_a6b95035e7b7985c3b0e9923407d6c149}{dist\+Computation}
+\begin{DoxyCompactList}\small\item\em The method to computes the distance between two points in latitude/longitude coordinate system.\end{DoxyCompactList}\item 
+\hyperlink{classParser}{Parser} \hyperlink{classDistBetweenNodes_a2a87914cc1b9e98fa17635950df55bd9}{p}
+\begin{DoxyCompactList}\small\item\em Open\+Street\+Map json parser\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class to computes the distance between two Open\+Street\+Map(\+O\+S\+M) nodes. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDistBetweenNodes_a1d84c0560c209da4cd0612ba8b198a71}\label{classDistBetweenNodes_a1d84c0560c209da4cd0612ba8b198a71}} 
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\subsubsection{\texorpdfstring{Dist\+Between\+Nodes()}{DistBetweenNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Dist\+Between\+Nodes.\+Dist\+Between\+Nodes (\begin{DoxyParamCaption}\item[{\hyperlink{classParser}{Parser}}]{p,  }\item[{\hyperlink{classDistanceComputation}{Distance\+Computation}}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The osm json parser\\
+\hline
+{\em d} & The method of distance computation\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDistBetweenNodes_a69841af034ea9d970333603afa458049}\label{classDistBetweenNodes_a69841af034ea9d970333603afa458049}} 
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\subsubsection{\texorpdfstring{Dist\+Between\+Nodes()}{DistBetweenNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Dist\+Between\+Nodes.\+Dist\+Between\+Nodes (\begin{DoxyParamCaption}\item[{\hyperlink{classParser}{Parser}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The osm json parser\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDistBetweenNodes_a2e27c4f9d851343d2d96e53864a841b7}\label{classDistBetweenNodes_a2e27c4f9d851343d2d96e53864a841b7}} 
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!calculate@{calculate}}
+\index{calculate@{calculate}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily abstract float Dist\+Between\+Nodes.\+calculate (\begin{DoxyParamCaption}\item[{string}]{node1,  }\item[{string}]{node2,  }\item[{ref List$<$ ulong $>$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculate the distance between 2 nodes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node1} & The index of first node.\\
+\hline
+{\em node2} & The index of second node.\\
+\hline
+{\em path} & The path of intermediary node to go from node1 to node2.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The length of the path.
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classFastDistBetweenNodes_ac178cac6f6b5fc2f884a38fa6ce0e6af}{Fast\+Dist\+Between\+Nodes}, and \hyperlink{classCompleteDistBetweenNodes_a52ae39f7c4157f7212c2bc195664f259}{Complete\+Dist\+Between\+Nodes}.
+
+\mbox{\Hypertarget{classDistBetweenNodes_a6a05019d7ec4797028e5e11611ff96d4}\label{classDistBetweenNodes_a6a05019d7ec4797028e5e11611ff96d4}} 
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!init\+Relation@{init\+Relation}}
+\index{init\+Relation@{init\+Relation}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\subsubsection{\texorpdfstring{init\+Relation()}{initRelation()}}
+{\footnotesize\ttfamily virtual void Dist\+Between\+Nodes.\+init\+Relation (\begin{DoxyParamCaption}\item[{int}]{curr\+Relation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Initialize the relation. Use it when you want to process a relation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+Relation} & The index of the relation to deal with.\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classCompleteDistBetweenNodes_a31b5ab0e3d811be03f4c7f54ec0d16a4}{Complete\+Dist\+Between\+Nodes}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDistBetweenNodes_a6b95035e7b7985c3b0e9923407d6c149}\label{classDistBetweenNodes_a6b95035e7b7985c3b0e9923407d6c149}} 
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!dist\+Computation@{dist\+Computation}}
+\index{dist\+Computation@{dist\+Computation}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\subsubsection{\texorpdfstring{dist\+Computation}{distComputation}}
+{\footnotesize\ttfamily \hyperlink{classDistanceComputation}{Distance\+Computation} Dist\+Between\+Nodes.\+dist\+Computation\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The method to computes the distance between two points in latitude/longitude coordinate system.
+
+\mbox{\Hypertarget{classDistBetweenNodes_a2a87914cc1b9e98fa17635950df55bd9}\label{classDistBetweenNodes_a2a87914cc1b9e98fa17635950df55bd9}} 
+\index{Dist\+Between\+Nodes@{Dist\+Between\+Nodes}!p@{p}}
+\index{p@{p}!Dist\+Between\+Nodes@{Dist\+Between\+Nodes}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \hyperlink{classParser}{Parser} Dist\+Between\+Nodes.\+p\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Open\+Street\+Map json parser
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+map\+Builder/\+Assets/\+Scripts/\+O\+S\+M\+Scripts/\hyperlink{distBetweenNodes_8cs}{dist\+Between\+Nodes.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,2 @@
+angle_calculation:distance_calculation:fiducials-kinetic-devel/aruco_detect:fiducials-kinetic-devel/fiducial_msgs:fiducials-kinetic-devel/fiducial_slam:fiducials-kinetic-devel/fiducials:gui:joy_to_twist:mr_sensor_handler:pid:robot_launch:ultrasonic_sensor:velocity_control
+-DCATKIN_DEVEL_PREFIX=/home/user/MRbot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/user/MRbot_ws/install -G Unix Makefiles

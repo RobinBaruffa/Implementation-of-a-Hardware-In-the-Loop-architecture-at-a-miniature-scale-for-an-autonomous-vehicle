@@ -1,0 +1,81 @@
+<launch>
+
+<node pkg="cv_camera" type="cv_camera_node" name="camera">
+        <param name="camera_frame_id" value="/camera"/>
+	<param name="rate" value="1"/>
+	<!--
+	<param name="image_width" value="640"/>
+	<param name="image_height" value="480"/>
+	<param name="rescale_camera_info" value=""/>
+	-->
+</node>
+<!--
+<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="0 0 0 -0.5 -0.5 0.5 0.5 map camera 100" />
+-->
+<node pkg="ultrasonic_sensor" type="ultrasonic_sensor.py" name="ultrasonic_sensor_node" output="screen"/>
+<node pkg="velocity_control" type="velocity_control.py" name="robot_control_node" output="screen"/>
+
+
+<!-- namespace for camera input -->
+<arg name="camera" default="/camera"/>
+<arg name="image" default="image_raw"/>
+<arg name="transport" default="compressed"/>
+<arg name="fiducial_len" default="0.12"/>
+<arg name="dictionary" default="7"/>
+<arg name="do_pose_estimation" default="true"/>
+<arg name="ignore_fiducials" default="10-41,43-1000" />
+<arg name="fiducial_len_override" default="" />
+
+<node pkg="aruco_detect" name="aruco_detect_node"
+type="aruco_detect" output="screen" respawn="false">
+<param name="image_transport" value="$(arg transport)"/>
+<param name="publish_images" value="true" />
+<param name="fiducial_len" value="$(arg fiducial_len)"/>
+<param name="dictionary" value="$(arg dictionary)"/>
+<param name="do_pose_estimation" value="$(arg do_pose_estimation)"/>
+<param name="ignore_fiducials" value="$(arg ignore_fiducials)"/>
+<param name="fiducial_len_override" value="$(arg fiducial_len_override)"/>
+
+<remap from="/camera/compressed"
+to="$(arg camera)/$(arg image)/$(arg transport)"/>
+<remap from="/camera_info" to="$(arg camera)/camera_info"/>
+</node>
+
+
+<node name="angle_calculation_node" pkg="angle_calculation" type="angle_calculation.py"/>
+<node name="distance_calculation_node" pkg="distance_calculation" type="distance_computation.py"/>
+<node name="distance_setpoint_node" pkg="distance_calculation" type="distance_setpoint.py"/>
+<node name="angle_setpoint_node" pkg="distance_calculation" type="angle_setpoint.py"/>
+
+<node name="distance_pid_node" pkg="pid" type="controller" >
+  <param name="topic_from_controller" value="rear_wheel_command"/>
+  <param name="topic_from_plant" value="distance"/>
+  <param name="setpoint_topic" value="distance_setpoint"/>
+  <param name="Kp" value="-1.0" />
+  <param name="Ki" value="-0.0" />
+  <param name="Kd" value="-0.0" />
+  <param name="upper_limit" value="1" />
+  <param name="lower_limit" value="-1" />
+  <param name="windup_limit" value="1" />
+  <param name="cutoff_frequency" value="2" />
+  <param name="max_loop_frequency" value="35" />
+  <param name="min_loop_frequency" value="7" />
+</node>
+
+<node name="angle_pid_node" pkg="pid" type="controller" >
+  <param name="topic_from_controller" value="front_wheel_command"/>
+  <param name="topic_from_plant" value="angle"/>
+  <param name="setpoint_topic" value="angle_setpoint"/>
+
+  <param name="Kp" value="1.0" />
+  <param name="Ki" value="0.0" />
+  <param name="Kd" value="0.0" />
+  <param name="upper_limit" value="1" />
+  <param name="lower_limit" value="-1" />
+  <param name="windup_limit" value="1" />
+  <param name="cutoff_frequency" value="2" />
+  <param name="max_loop_frequency" value="35" />
+  <param name="min_loop_frequency" value="30" />
+</node>
+
+</launch>

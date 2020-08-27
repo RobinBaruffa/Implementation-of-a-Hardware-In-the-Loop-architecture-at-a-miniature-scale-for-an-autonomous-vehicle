@@ -1,0 +1,223 @@
+\hypertarget{classSplineWalker}{}\section{Spline\+Walker Class Reference}
+\label{classSplineWalker}\index{Spline\+Walker@{Spline\+Walker}}
+
+
+Class that handles the movements a Vehicle on a Spline.  
+
+
+
+
+Inheritance diagram for Spline\+Walker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classSplineWalker__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Spline\+Walker\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classSplineWalker__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBezierSpline}{Bezier\+Spline} \hyperlink{classSplineWalker_ad55573118c9baae295b8bb272f03cc98}{spline}
+\begin{DoxyCompactList}\small\item\em The Spline to follow\end{DoxyCompactList}\item 
+bool \hyperlink{classSplineWalker_a7362491b40105af4e4f55c325257d7f7}{is\+Following} = false
+\begin{DoxyCompactList}\small\item\em Is the Game\+Object following another one.\end{DoxyCompactList}\item 
+bool \hyperlink{classSplineWalker_a21421e86b8ad0d38e04eadb1fcb0d57c}{is\+Driving}
+\begin{DoxyCompactList}\small\item\em Is the Game\+Object using a realistic method to move.\end{DoxyCompactList}\item 
+float \hyperlink{classSplineWalker_a26faffe76aa7172af19af857dc183d60}{velocity}
+\begin{DoxyCompactList}\small\item\em Speed of the Game\+Object when controls are not handled by the driving car controller.\end{DoxyCompactList}\item 
+Game\+Object \hyperlink{classSplineWalker_a98a7d49f715f41e9a7b5bfe779f11d75}{follows\+Game\+Object}
+\begin{DoxyCompactList}\small\item\em If is\+Following is enabled, this is the Game\+Object to follow.\end{DoxyCompactList}\item 
+float \hyperlink{classSplineWalker_a82080d499233b63d2cbde7274e2036b6}{distance\+Following} = 15f
+\begin{DoxyCompactList}\small\item\em The wanted interdistance between the two Game\+Object. Only needed for the follower.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classSplineWalker_a261aa79e4051461acff99d39f2b09a98}{progress}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The progress of the Game\+Object over the Spline. Range from 0 to 1 in float.\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classSplineWalker_a7302455633490f68b15aad02b8fa54ca}{Start} ()
+\begin{DoxyCompactList}\small\item\em Initialization of the class \end{DoxyCompactList}\item 
+void \hyperlink{classSplineWalker_a9f250a7d108edae41325147ff1716db1}{Fixed\+Update} ()
+\begin{DoxyCompactList}\small\item\em Updates the path every frame. \end{DoxyCompactList}\item 
+float \hyperlink{classSplineWalker_a22d54e33aad18ea37775cea3229b7a72}{find\+Nearest\+Point\+In\+Spline} ()
+\begin{DoxyCompactList}\small\item\em Find the nearest progress point from the leader Game\+Object in the spline. \end{DoxyCompactList}\item 
+void \hyperlink{classSplineWalker_af1b6b1a3ede935316f1b5f686a2a9989}{look\+Forward} (float looking\+Distance)
+\begin{DoxyCompactList}\small\item\em Force the Game\+Object to look forward the Spline. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Car\+Controller \hyperlink{classSplineWalker_ab8305528947e2a3ddfdbdc7b235640ab}{m\+\_\+\+Car}
+\begin{DoxyCompactList}\small\item\em The realistic controller.\end{DoxyCompactList}\item 
+const float \hyperlink{classSplineWalker_ae63367c40ff2c2c8ca29e43e42951a06}{sampling} = 100
+\begin{DoxyCompactList}\small\item\em Discretisation of intervals.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that handles the movements a Vehicle on a Spline. 
+
+\href{https://catlikecoding.com/unity/tutorials/curves-and-splines/}{\tt https\+://catlikecoding.\+com/unity/tutorials/curves-\/and-\/splines/}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSplineWalker_a22d54e33aad18ea37775cea3229b7a72}\label{classSplineWalker_a22d54e33aad18ea37775cea3229b7a72}} 
+\index{Spline\+Walker@{Spline\+Walker}!find\+Nearest\+Point\+In\+Spline@{find\+Nearest\+Point\+In\+Spline}}
+\index{find\+Nearest\+Point\+In\+Spline@{find\+Nearest\+Point\+In\+Spline}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{find\+Nearest\+Point\+In\+Spline()}{findNearestPointInSpline()}}
+{\footnotesize\ttfamily float Spline\+Walker.\+find\+Nearest\+Point\+In\+Spline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Find the nearest progress point from the leader Game\+Object in the spline. 
+
+\begin{DoxyReturn}{Returns}
+The value of progress.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSplineWalker_a9f250a7d108edae41325147ff1716db1}\label{classSplineWalker_a9f250a7d108edae41325147ff1716db1}} 
+\index{Spline\+Walker@{Spline\+Walker}!Fixed\+Update@{Fixed\+Update}}
+\index{Fixed\+Update@{Fixed\+Update}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{Fixed\+Update()}{FixedUpdate()}}
+{\footnotesize\ttfamily void Spline\+Walker.\+Fixed\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Updates the path every frame. 
+
+\mbox{\Hypertarget{classSplineWalker_af1b6b1a3ede935316f1b5f686a2a9989}\label{classSplineWalker_af1b6b1a3ede935316f1b5f686a2a9989}} 
+\index{Spline\+Walker@{Spline\+Walker}!look\+Forward@{look\+Forward}}
+\index{look\+Forward@{look\+Forward}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{look\+Forward()}{lookForward()}}
+{\footnotesize\ttfamily void Spline\+Walker.\+look\+Forward (\begin{DoxyParamCaption}\item[{float}]{looking\+Distance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Force the Game\+Object to look forward the Spline. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em looking\+Distance} & The distance the Game\+Object will look next on the spline. Can\textquotesingle{}t be higher than the two extremities distance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of progress.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSplineWalker_a7302455633490f68b15aad02b8fa54ca}\label{classSplineWalker_a7302455633490f68b15aad02b8fa54ca}} 
+\index{Spline\+Walker@{Spline\+Walker}!Start@{Start}}
+\index{Start@{Start}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Spline\+Walker.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Initialization of the class 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSplineWalker_a82080d499233b63d2cbde7274e2036b6}\label{classSplineWalker_a82080d499233b63d2cbde7274e2036b6}} 
+\index{Spline\+Walker@{Spline\+Walker}!distance\+Following@{distance\+Following}}
+\index{distance\+Following@{distance\+Following}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{distance\+Following}{distanceFollowing}}
+{\footnotesize\ttfamily float Spline\+Walker.\+distance\+Following = 15f}
+
+
+
+The wanted interdistance between the two Game\+Object. Only needed for the follower.
+
+\mbox{\Hypertarget{classSplineWalker_a98a7d49f715f41e9a7b5bfe779f11d75}\label{classSplineWalker_a98a7d49f715f41e9a7b5bfe779f11d75}} 
+\index{Spline\+Walker@{Spline\+Walker}!follows\+Game\+Object@{follows\+Game\+Object}}
+\index{follows\+Game\+Object@{follows\+Game\+Object}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{follows\+Game\+Object}{followsGameObject}}
+{\footnotesize\ttfamily Game\+Object Spline\+Walker.\+follows\+Game\+Object}
+
+
+
+If is\+Following is enabled, this is the Game\+Object to follow.
+
+\mbox{\Hypertarget{classSplineWalker_a21421e86b8ad0d38e04eadb1fcb0d57c}\label{classSplineWalker_a21421e86b8ad0d38e04eadb1fcb0d57c}} 
+\index{Spline\+Walker@{Spline\+Walker}!is\+Driving@{is\+Driving}}
+\index{is\+Driving@{is\+Driving}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{is\+Driving}{isDriving}}
+{\footnotesize\ttfamily bool Spline\+Walker.\+is\+Driving}
+
+
+
+Is the Game\+Object using a realistic method to move.
+
+\mbox{\Hypertarget{classSplineWalker_a7362491b40105af4e4f55c325257d7f7}\label{classSplineWalker_a7362491b40105af4e4f55c325257d7f7}} 
+\index{Spline\+Walker@{Spline\+Walker}!is\+Following@{is\+Following}}
+\index{is\+Following@{is\+Following}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{is\+Following}{isFollowing}}
+{\footnotesize\ttfamily bool Spline\+Walker.\+is\+Following = false}
+
+
+
+Is the Game\+Object following another one.
+
+\mbox{\Hypertarget{classSplineWalker_ab8305528947e2a3ddfdbdc7b235640ab}\label{classSplineWalker_ab8305528947e2a3ddfdbdc7b235640ab}} 
+\index{Spline\+Walker@{Spline\+Walker}!m\+\_\+\+Car@{m\+\_\+\+Car}}
+\index{m\+\_\+\+Car@{m\+\_\+\+Car}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Car}{m\_Car}}
+{\footnotesize\ttfamily Car\+Controller Spline\+Walker.\+m\+\_\+\+Car\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The realistic controller.
+
+\mbox{\Hypertarget{classSplineWalker_ae63367c40ff2c2c8ca29e43e42951a06}\label{classSplineWalker_ae63367c40ff2c2c8ca29e43e42951a06}} 
+\index{Spline\+Walker@{Spline\+Walker}!sampling@{sampling}}
+\index{sampling@{sampling}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{sampling}{sampling}}
+{\footnotesize\ttfamily const float Spline\+Walker.\+sampling = 100\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Discretisation of intervals.
+
+\mbox{\Hypertarget{classSplineWalker_ad55573118c9baae295b8bb272f03cc98}\label{classSplineWalker_ad55573118c9baae295b8bb272f03cc98}} 
+\index{Spline\+Walker@{Spline\+Walker}!spline@{spline}}
+\index{spline@{spline}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{spline}{spline}}
+{\footnotesize\ttfamily \hyperlink{classBezierSpline}{Bezier\+Spline} Spline\+Walker.\+spline}
+
+
+
+The Spline to follow
+
+\mbox{\Hypertarget{classSplineWalker_a26faffe76aa7172af19af857dc183d60}\label{classSplineWalker_a26faffe76aa7172af19af857dc183d60}} 
+\index{Spline\+Walker@{Spline\+Walker}!velocity@{velocity}}
+\index{velocity@{velocity}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily float Spline\+Walker.\+velocity}
+
+
+
+Speed of the Game\+Object when controls are not handled by the driving car controller.
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classSplineWalker_a261aa79e4051461acff99d39f2b09a98}\label{classSplineWalker_a261aa79e4051461acff99d39f2b09a98}} 
+\index{Spline\+Walker@{Spline\+Walker}!progress@{progress}}
+\index{progress@{progress}!Spline\+Walker@{Spline\+Walker}}
+\subsubsection{\texorpdfstring{progress}{progress}}
+{\footnotesize\ttfamily float Spline\+Walker.\+progress\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The progress of the Game\+Object over the Spline. Range from 0 to 1 in float.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+mixed\+Reality\+Simulator/\+Assets/\+Scripts/\+Bezier/\hyperlink{SplineWalker_8cs}{Spline\+Walker.\+cs}\end{DoxyCompactItemize}

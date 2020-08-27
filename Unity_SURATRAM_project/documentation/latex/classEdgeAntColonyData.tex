@@ -1,0 +1,181 @@
+\hypertarget{classEdgeAntColonyData}{}\section{Edge\+Ant\+Colony\+Data Class Reference}
+\label{classEdgeAntColonyData}\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+
+
+\hyperlink{classEdge}{Edge} with data for the \hyperlink{classAnt}{Ant} Colony Algorithm.  
+
+
+
+
+Inheritance diagram for Edge\+Ant\+Colony\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classEdgeAntColonyData__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Edge\+Ant\+Colony\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classEdgeAntColonyData__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEdgeAntColonyData_a8a3218b8543d8d6c276e4930213ae2c1}{Edge\+Ant\+Colony\+Data} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \end{DoxyCompactList}\item 
+\hyperlink{classEdgeAntColonyData_afc711388f9b95f3a30fbc4d70a9c1760}{Edge\+Ant\+Colony\+Data} (ulong n1, float n2, float n3)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\hyperlink{classEdgeAntColonyData_a43aa1c5d885f881cd394f503925f2285}{Edge\+Ant\+Colony\+Data} (ulong n1, float n2, float n3, List$<$ ulong $>$ \hyperlink{classEdge_a60f58b7cc5e9f00c8695fce3047933d8}{path})
+\begin{DoxyCompactList}\small\item\em Full Constructor \end{DoxyCompactList}\item 
+override void \hyperlink{classEdgeAntColonyData_a9debcbebb6da559502b5c4a0a0879983}{deep\+Cpy} (\hyperlink{classEdge}{Edge} e)
+\begin{DoxyCompactList}\small\item\em Copy in depth of an \hyperlink{classEdge}{Edge} in the current \hyperlink{classEdge}{Edge}. \end{DoxyCompactList}\item 
+override string \hyperlink{classEdgeAntColonyData_a96fcbfc9f8617fbe61e23fce620db096}{To\+String} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEdge}{Edge} to string \end{DoxyCompactList}\item 
+override int \hyperlink{classEdgeAntColonyData_af572cac49302014507f7c34b1bab3e19}{Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Generate the Hashcode of the \hyperlink{classEdge}{Edge} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{classEdgeAntColonyData_ac99dc0270bdca2f00d78cf58ba805211}{pheromones}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pheromones on an \hyperlink{classEdge}{Edge}\end{DoxyCompactList}\item 
+float \hyperlink{classEdgeAntColonyData_a59a62ff81819e2be030da38ca02bb059}{distance\+Factor}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Computed distance Factor of the edge\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classEdge}{Edge} with data for the \hyperlink{classAnt}{Ant} Colony Algorithm. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEdgeAntColonyData_a8a3218b8543d8d6c276e4930213ae2c1}\label{classEdgeAntColonyData_a8a3218b8543d8d6c276e4930213ae2c1}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{Edge\+Ant\+Colony\+Data()}{EdgeAntColonyData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Edge\+Ant\+Colony\+Data.\+Edge\+Ant\+Colony\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor 
+
+\mbox{\Hypertarget{classEdgeAntColonyData_afc711388f9b95f3a30fbc4d70a9c1760}\label{classEdgeAntColonyData_afc711388f9b95f3a30fbc4d70a9c1760}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{Edge\+Ant\+Colony\+Data()}{EdgeAntColonyData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Edge\+Ant\+Colony\+Data.\+Edge\+Ant\+Colony\+Data (\begin{DoxyParamCaption}\item[{ulong}]{n1,  }\item[{float}]{n2,  }\item[{float}]{n3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Id of the \hyperlink{classEdge}{Edge}\\
+\hline
+{\em n2} & The distance of the \hyperlink{classEdge}{Edge}\\
+\hline
+{\em n3} & The pheromones\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdgeAntColonyData_a43aa1c5d885f881cd394f503925f2285}\label{classEdgeAntColonyData_a43aa1c5d885f881cd394f503925f2285}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{Edge\+Ant\+Colony\+Data()}{EdgeAntColonyData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Edge\+Ant\+Colony\+Data.\+Edge\+Ant\+Colony\+Data (\begin{DoxyParamCaption}\item[{ulong}]{n1,  }\item[{float}]{n2,  }\item[{float}]{n3,  }\item[{List$<$ ulong $>$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Full Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Id of the \hyperlink{classEdge}{Edge}\\
+\hline
+{\em n2} & The distance of the \hyperlink{classEdge}{Edge}\\
+\hline
+{\em n3} & The pheromones\\
+\hline
+{\em path} & The list of intermediary nodes in O\+SM\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEdgeAntColonyData_a9debcbebb6da559502b5c4a0a0879983}\label{classEdgeAntColonyData_a9debcbebb6da559502b5c4a0a0879983}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!deep\+Cpy@{deep\+Cpy}}
+\index{deep\+Cpy@{deep\+Cpy}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{deep\+Cpy()}{deepCpy()}}
+{\footnotesize\ttfamily override void Edge\+Ant\+Colony\+Data.\+deep\+Cpy (\begin{DoxyParamCaption}\item[{\hyperlink{classEdge}{Edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Copy in depth of an \hyperlink{classEdge}{Edge} in the current \hyperlink{classEdge}{Edge}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Source \hyperlink{classEdge}{Edge} for the copy\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classEdge_a4257c70fbb9e6c719ea8707a7ad021c5}{Edge}.
+
+\mbox{\Hypertarget{classEdgeAntColonyData_af572cac49302014507f7c34b1bab3e19}\label{classEdgeAntColonyData_af572cac49302014507f7c34b1bab3e19}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!Get\+Hash\+Code@{Get\+Hash\+Code}}
+\index{Get\+Hash\+Code@{Get\+Hash\+Code}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{Get\+Hash\+Code()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Edge\+Ant\+Colony\+Data.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate the Hashcode of the \hyperlink{classEdge}{Edge} 
+
+\begin{DoxyReturn}{Returns}
+The resulting Hash\+Code
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdgeAntColonyData_a96fcbfc9f8617fbe61e23fce620db096}\label{classEdgeAntColonyData_a96fcbfc9f8617fbe61e23fce620db096}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Edge\+Ant\+Colony\+Data.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classEdge}{Edge} to string 
+
+\begin{DoxyReturn}{Returns}
+The resulting string
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classEdgeAntColonyData_a59a62ff81819e2be030da38ca02bb059}\label{classEdgeAntColonyData_a59a62ff81819e2be030da38ca02bb059}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!distance\+Factor@{distance\+Factor}}
+\index{distance\+Factor@{distance\+Factor}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{distance\+Factor}{distanceFactor}}
+{\footnotesize\ttfamily float Edge\+Ant\+Colony\+Data.\+distance\+Factor\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Computed distance Factor of the edge
+
+\mbox{\Hypertarget{classEdgeAntColonyData_ac99dc0270bdca2f00d78cf58ba805211}\label{classEdgeAntColonyData_ac99dc0270bdca2f00d78cf58ba805211}} 
+\index{Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}!pheromones@{pheromones}}
+\index{pheromones@{pheromones}!Edge\+Ant\+Colony\+Data@{Edge\+Ant\+Colony\+Data}}
+\subsubsection{\texorpdfstring{pheromones}{pheromones}}
+{\footnotesize\ttfamily float Edge\+Ant\+Colony\+Data.\+pheromones\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pheromones on an \hyperlink{classEdge}{Edge}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+map\+Builder/\+Assets/\+Scripts/\+Graph/\hyperlink{Graph_8cs}{Graph.\+cs}\end{DoxyCompactItemize}

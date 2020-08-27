@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classBezierCurveInspector.html" title="BezierCurveInspector" alt="" coords="112,5,260,32"/>
+<area shape="rect" id="node3" href="$classBezierSplineInspector.html" title="BezierSplineInspector" alt="" coords="111,56,261,83"/>
+<area shape="rect" id="node4" href="$classLineInspector.html" title="LineInspector" alt="" coords="136,107,236,133"/>
+<area shape="rect" id="node5" href="$classSplineWalkerInspector.html" title="Class that format the SplineWalker settings to a more user&#45;friendly one. " alt="" coords="109,157,263,184"/>
+</map>

@@ -1,0 +1,261 @@
+\hypertarget{classEdge}{}\section{Edge Class Reference}
+\label{classEdge}\index{Edge@{Edge}}
+
+
+\hyperlink{classEdge}{Edge} with data needed to the Unity import  
+
+
+
+
+Inheritance diagram for Edge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{classEdge__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Edge\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classEdge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEdge_a54518f2f40f38b8701a8b1943101ea2a}{Edge} (ulong n1, float n2, List$<$ ulong $>$ \hyperlink{classEdge_a60f58b7cc5e9f00c8695fce3047933d8}{path})
+\begin{DoxyCompactList}\small\item\em Full Constructor \end{DoxyCompactList}\item 
+\hyperlink{classEdge_ad61d8cbeee465bf06ff07b30ff694ab5}{Edge} (ulong n1, float n2)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\hyperlink{classEdge_ae20fecc11a724d2b3c828f4f2ab9f838}{Edge} (\hyperlink{classEdge}{Edge} e)
+\begin{DoxyCompactList}\small\item\em Copy constructor \end{DoxyCompactList}\item 
+\hyperlink{classEdge_acc2a99d2cb4375bd9242a3961bf0bba5}{Edge} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \end{DoxyCompactList}\item 
+\hyperlink{classEdge}{Edge} \hyperlink{classEdge_aa5f9c64bec6f5fbea2031c711e2ad4e0}{Deep\+Copy} ()
+\begin{DoxyCompactList}\small\item\em Returns a copy of the current \hyperlink{classEdge}{Edge}. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classEdge_a4257c70fbb9e6c719ea8707a7ad021c5}{deep\+Cpy} (\hyperlink{classEdge}{Edge} e)
+\begin{DoxyCompactList}\small\item\em Copy in depth of an \hyperlink{classEdge}{Edge} in the current \hyperlink{classEdge}{Edge}. \end{DoxyCompactList}\item 
+bool \hyperlink{classEdge_ab070ab636aed7cb54b6cfc71ccdbf9c6}{path\+Equals} (\hyperlink{classEdge}{Edge} e)
+\begin{DoxyCompactList}\small\item\em Check if path is equal with the path of another edge. \end{DoxyCompactList}\item 
+bool \hyperlink{classEdge_a4f8a452073ff0988962014e9037df65d}{Equals} (\hyperlink{classEdge}{Edge} e)
+\begin{DoxyCompactList}\small\item\em Check if the \hyperlink{classEdge}{Edge} is equal with another \hyperlink{classEdge}{Edge}. \end{DoxyCompactList}\item 
+override string \hyperlink{classEdge_a4ccf109be5219f74fdb635a73d93ab64}{To\+String} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classEdge}{Edge} to string \end{DoxyCompactList}\item 
+override int \hyperlink{classEdge_a66fbde74247da2afd025b3ff48afaa92}{Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Generate the Hashcode of the \hyperlink{classEdge}{Edge} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+ulong \hyperlink{classEdge_ab6636388f33f71927f8b48f2444e2461}{id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Id of the \hyperlink{classEdge}{Edge}\end{DoxyCompactList}\item 
+float \hyperlink{classEdge_ac641179c0f3b7387c98e1bd6386869df}{d}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Length of the \hyperlink{classEdge}{Edge}\end{DoxyCompactList}\item 
+List$<$ ulong $>$ \hyperlink{classEdge_a60f58b7cc5e9f00c8695fce3047933d8}{path}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Intermediate O\+SM nodes\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classEdge}{Edge} with data needed to the Unity import 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEdge_a54518f2f40f38b8701a8b1943101ea2a}\label{classEdge_a54518f2f40f38b8701a8b1943101ea2a}} 
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{Edge()}{Edge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Edge.\+Edge (\begin{DoxyParamCaption}\item[{ulong}]{n1,  }\item[{float}]{n2,  }\item[{List$<$ ulong $>$}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Full Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Id of the \hyperlink{classEdge}{Edge}\\
+\hline
+{\em n2} & The distance of the \hyperlink{classEdge}{Edge}\\
+\hline
+{\em path} & The list of intermediary nodes in O\+SM\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_ad61d8cbeee465bf06ff07b30ff694ab5}\label{classEdge_ad61d8cbeee465bf06ff07b30ff694ab5}} 
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{Edge()}{Edge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Edge.\+Edge (\begin{DoxyParamCaption}\item[{ulong}]{n1,  }\item[{float}]{n2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n1} & Id of the \hyperlink{classEdge}{Edge}\\
+\hline
+{\em n2} & The distance of the \hyperlink{classEdge}{Edge}\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_ae20fecc11a724d2b3c828f4f2ab9f838}\label{classEdge_ae20fecc11a724d2b3c828f4f2ab9f838}} 
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{Edge()}{Edge()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Edge.\+Edge (\begin{DoxyParamCaption}\item[{\hyperlink{classEdge}{Edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \hyperlink{classEdge}{Edge} to copy from\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEdge_acc2a99d2cb4375bd9242a3961bf0bba5}\label{classEdge_acc2a99d2cb4375bd9242a3961bf0bba5}} 
+\index{Edge@{Edge}!Edge@{Edge}}
+\index{Edge@{Edge}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{Edge()}{Edge()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Edge.\+Edge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEdge_aa5f9c64bec6f5fbea2031c711e2ad4e0}\label{classEdge_aa5f9c64bec6f5fbea2031c711e2ad4e0}} 
+\index{Edge@{Edge}!Deep\+Copy@{Deep\+Copy}}
+\index{Deep\+Copy@{Deep\+Copy}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{Deep\+Copy()}{DeepCopy()}}
+{\footnotesize\ttfamily \hyperlink{classEdge}{Edge} Edge.\+Deep\+Copy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a copy of the current \hyperlink{classEdge}{Edge}. 
+
+\begin{DoxyReturn}{Returns}
+The copied edge
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a4257c70fbb9e6c719ea8707a7ad021c5}\label{classEdge_a4257c70fbb9e6c719ea8707a7ad021c5}} 
+\index{Edge@{Edge}!deep\+Cpy@{deep\+Cpy}}
+\index{deep\+Cpy@{deep\+Cpy}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{deep\+Cpy()}{deepCpy()}}
+{\footnotesize\ttfamily virtual void Edge.\+deep\+Cpy (\begin{DoxyParamCaption}\item[{\hyperlink{classEdge}{Edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Copy in depth of an \hyperlink{classEdge}{Edge} in the current \hyperlink{classEdge}{Edge}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Source \hyperlink{classEdge}{Edge} for the copy\\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classEdgeAntColonyData_a9debcbebb6da559502b5c4a0a0879983}{Edge\+Ant\+Colony\+Data}.
+
+\mbox{\Hypertarget{classEdge_a4f8a452073ff0988962014e9037df65d}\label{classEdge_a4f8a452073ff0988962014e9037df65d}} 
+\index{Edge@{Edge}!Equals@{Equals}}
+\index{Equals@{Equals}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily bool Edge.\+Equals (\begin{DoxyParamCaption}\item[{\hyperlink{classEdge}{Edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the \hyperlink{classEdge}{Edge} is equal with another \hyperlink{classEdge}{Edge}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \hyperlink{classEdge}{Edge} to check with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if paths are equals. False else
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a66fbde74247da2afd025b3ff48afaa92}\label{classEdge_a66fbde74247da2afd025b3ff48afaa92}} 
+\index{Edge@{Edge}!Get\+Hash\+Code@{Get\+Hash\+Code}}
+\index{Get\+Hash\+Code@{Get\+Hash\+Code}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{Get\+Hash\+Code()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Edge.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate the Hashcode of the \hyperlink{classEdge}{Edge} 
+
+\begin{DoxyReturn}{Returns}
+The resulting Hash\+Code
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_ab070ab636aed7cb54b6cfc71ccdbf9c6}\label{classEdge_ab070ab636aed7cb54b6cfc71ccdbf9c6}} 
+\index{Edge@{Edge}!path\+Equals@{path\+Equals}}
+\index{path\+Equals@{path\+Equals}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{path\+Equals()}{pathEquals()}}
+{\footnotesize\ttfamily bool Edge.\+path\+Equals (\begin{DoxyParamCaption}\item[{\hyperlink{classEdge}{Edge}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if path is equal with the path of another edge. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & \hyperlink{classEdge}{Edge} to check with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if paths are equals. False else
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEdge_a4ccf109be5219f74fdb635a73d93ab64}\label{classEdge_a4ccf109be5219f74fdb635a73d93ab64}} 
+\index{Edge@{Edge}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Edge.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classEdge}{Edge} to string 
+
+\begin{DoxyReturn}{Returns}
+The resulting string
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classEdge_ac641179c0f3b7387c98e1bd6386869df}\label{classEdge_ac641179c0f3b7387c98e1bd6386869df}} 
+\index{Edge@{Edge}!d@{d}}
+\index{d@{d}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{d}{d}}
+{\footnotesize\ttfamily float Edge.\+d\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Length of the \hyperlink{classEdge}{Edge}
+
+\mbox{\Hypertarget{classEdge_ab6636388f33f71927f8b48f2444e2461}\label{classEdge_ab6636388f33f71927f8b48f2444e2461}} 
+\index{Edge@{Edge}!id@{id}}
+\index{id@{id}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily ulong Edge.\+id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Id of the \hyperlink{classEdge}{Edge}
+
+\mbox{\Hypertarget{classEdge_a60f58b7cc5e9f00c8695fce3047933d8}\label{classEdge_a60f58b7cc5e9f00c8695fce3047933d8}} 
+\index{Edge@{Edge}!path@{path}}
+\index{path@{path}!Edge@{Edge}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily List$<$ulong$>$ Edge.\+path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Intermediate O\+SM nodes
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+map\+Builder/\+Assets/\+Scripts/\+Graph/\hyperlink{Graph_8cs}{Graph.\+cs}\end{DoxyCompactItemize}

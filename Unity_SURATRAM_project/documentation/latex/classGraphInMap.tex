@@ -1,0 +1,229 @@
+\hypertarget{classGraphInMap}{}\section{Graph\+In\+Map Class Reference}
+\label{classGraphInMap}\index{Graph\+In\+Map@{Graph\+In\+Map}}
+
+
+This function inserts the nodes from {\ttfamily \hyperlink{classBusLineParser}{Bus\+Line\+Parser}} in the Unity Scene. It converts from a latitude-\/longitude coordinate system to and a 2 dimensions cartésian coordinate system  
+
+
+
+
+Collaboration diagram for Graph\+In\+Map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{classGraphInMap__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGraphInMap_ae90bf398b6c8d18784d8d01f28ad1da0}{Graph\+In\+Map} ()
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\hyperlink{classGraphInMap_ac9b024f6f816f9451702f1b9a829aa0a}{Graph\+In\+Map} (string file)
+\begin{DoxyCompactList}\small\item\em Constructor with a custom O\+SM file. \end{DoxyCompactList}\item 
+\hyperlink{classGraph}{Graph} \hyperlink{classGraphInMap_a399e9c51b1492837c7d71b9a729a84ad}{get\+Graph} ()
+\begin{DoxyCompactList}\small\item\em Getter of {\ttfamily \hyperlink{classGraph}{Graph}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classGraphInMap_a612a84b6c2a70a8f5fd73db6cc012ae3}{osm\+File}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classGraphInMap_a093ceede1053f87087bd3e4696fcae09}{Start} ()
+\begin{DoxyCompactList}\small\item\em Initialize and launch the graph creation \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classGraphInMap_a6fea7c15110ea78076b146139e2a30da}{event\+Vertex\+Created} (object sender, \hyperlink{classVertexCreateEventArgs}{Vertex\+Create\+Event\+Args} e)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBusLineParser}{Bus\+Line\+Parser} \hyperlink{classGraphInMap_ab4e6ee3792c7cf819b1816c24acdcb24}{p}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float \hyperlink{classGraphInMap_aa8378e8c900bf9192e921b2050f4d2a4}{lat\+Origin} = 47.\+665222f
+\begin{DoxyCompactList}\small\item\em Reference positions ((x,y) origin) when converted from a latitude-\/longitude coordinate system to and a 2 dimensions cartésian coordinate system \end{DoxyCompactList}\item 
+static float \hyperlink{classGraphInMap_ad976da0443161f13f73a84661e148cd5}{lon\+Origin} = 6.\+8416914f
+\begin{DoxyCompactList}\small\item\em Reference positions ((x,y) origin) when converted from a latitude-\/longitude coordinate system to and a 2 dimensions cartésian coordinate system \end{DoxyCompactList}\item 
+static float \hyperlink{classGraphInMap_a069890e3bb1f0ca907507a6651704b32}{lat\+End} = 47.\+5787422f
+\begin{DoxyCompactList}\small\item\em Second point to accuratly place points in Unity \end{DoxyCompactList}\item 
+static float \hyperlink{classGraphInMap_a4e63761178f713380882e24c9314d882}{lon\+End} = 6.\+8981233f
+\begin{DoxyCompactList}\small\item\em Second point to accuratly place points in Unity \end{DoxyCompactList}\item 
+static float \hyperlink{classGraphInMap_a2781188e0f0f11ccff75ff0d07c7596d}{lon\+Ref} = Mathf.\+Cos(\hyperlink{classGraphInMap_ad976da0443161f13f73a84661e148cd5}{lon\+Origin} $\ast$ (float) Math.\+PI / 180f)
+\begin{DoxyCompactList}\small\item\em Computed value of the longitude reference. \end{DoxyCompactList}\item 
+static float \hyperlink{classGraphInMap_ae6baf9b727da8e55d0634912f4e32913}{R} = 6371e3f
+\begin{DoxyCompactList}\small\item\em Earth radius\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This function inserts the nodes from {\ttfamily \hyperlink{classBusLineParser}{Bus\+Line\+Parser}} in the Unity Scene. It converts from a latitude-\/longitude coordinate system to and a 2 dimensions cartésian coordinate system 
+
+This class listen to {\ttfamily \hyperlink{classBusLineParser}{Bus\+Line\+Parser}} events
+
+\href{https://en.wikipedia.org/wiki/Equirectangular_projection#Definition}{\tt https\+://en.\+wikipedia.\+org/wiki/\+Equirectangular\+\_\+projection\#\+Definition}
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraphInMap_ae90bf398b6c8d18784d8d01f28ad1da0}\label{classGraphInMap_ae90bf398b6c8d18784d8d01f28ad1da0}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!Graph\+In\+Map@{Graph\+In\+Map}}
+\index{Graph\+In\+Map@{Graph\+In\+Map}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{Graph\+In\+Map()}{GraphInMap()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Graph\+In\+Map.\+Graph\+In\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+\mbox{\Hypertarget{classGraphInMap_ac9b024f6f816f9451702f1b9a829aa0a}\label{classGraphInMap_ac9b024f6f816f9451702f1b9a829aa0a}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!Graph\+In\+Map@{Graph\+In\+Map}}
+\index{Graph\+In\+Map@{Graph\+In\+Map}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{Graph\+In\+Map()}{GraphInMap()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Graph\+In\+Map.\+Graph\+In\+Map (\begin{DoxyParamCaption}\item[{string}]{file }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor with a custom O\+SM file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The path of the file. Ex \char`\"{}\+Assets/\+Data/\+O\+S\+M/belfort.\+json\char`\"{}.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraphInMap_a6fea7c15110ea78076b146139e2a30da}\label{classGraphInMap_a6fea7c15110ea78076b146139e2a30da}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!event\+Vertex\+Created@{event\+Vertex\+Created}}
+\index{event\+Vertex\+Created@{event\+Vertex\+Created}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{event\+Vertex\+Created()}{eventVertexCreated()}}
+{\footnotesize\ttfamily static void Graph\+In\+Map.\+event\+Vertex\+Created (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\hyperlink{classVertexCreateEventArgs}{Vertex\+Create\+Event\+Args}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+
+
+This function is the event handler. It is called every vertex created. 
+
+It retrieves the \hyperlink{structVertex}{Vertex} created, converts its coordinates and finally instanciate it in Unity at the right position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & Sender of the signal\\
+\hline
+{\em e} & The vertex created.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraphInMap_a399e9c51b1492837c7d71b9a729a84ad}\label{classGraphInMap_a399e9c51b1492837c7d71b9a729a84ad}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!get\+Graph@{get\+Graph}}
+\index{get\+Graph@{get\+Graph}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{get\+Graph()}{getGraph()}}
+{\footnotesize\ttfamily \hyperlink{classGraph}{Graph} Graph\+In\+Map.\+get\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter of {\ttfamily \hyperlink{classGraph}{Graph}} 
+
+\begin{DoxyReturn}{Returns}
+The property {\ttfamily \hyperlink{classGraph}{Graph}}
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraphInMap_a093ceede1053f87087bd3e4696fcae09}\label{classGraphInMap_a093ceede1053f87087bd3e4696fcae09}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!Start@{Start}}
+\index{Start@{Start}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Graph\+In\+Map.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Initialize and launch the graph creation 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGraphInMap_a069890e3bb1f0ca907507a6651704b32}\label{classGraphInMap_a069890e3bb1f0ca907507a6651704b32}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!lat\+End@{lat\+End}}
+\index{lat\+End@{lat\+End}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{lat\+End}{latEnd}}
+{\footnotesize\ttfamily float Graph\+In\+Map.\+lat\+End = 47.\+5787422f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Second point to accuratly place points in Unity 
+
+Value of the latitude of another reference point called Nav\+Destination\+End in Unity\mbox{\Hypertarget{classGraphInMap_aa8378e8c900bf9192e921b2050f4d2a4}\label{classGraphInMap_aa8378e8c900bf9192e921b2050f4d2a4}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!lat\+Origin@{lat\+Origin}}
+\index{lat\+Origin@{lat\+Origin}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{lat\+Origin}{latOrigin}}
+{\footnotesize\ttfamily float Graph\+In\+Map.\+lat\+Origin = 47.\+665222f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Reference positions ((x,y) origin) when converted from a latitude-\/longitude coordinate system to and a 2 dimensions cartésian coordinate system 
+
+Value of the latitude of the 340000377 Open\+Street\+Map node
+
+\begin{DoxyReturn}{Returns}
+Arbitrary chosen node 340000377
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraphInMap_a4e63761178f713380882e24c9314d882}\label{classGraphInMap_a4e63761178f713380882e24c9314d882}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!lon\+End@{lon\+End}}
+\index{lon\+End@{lon\+End}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{lon\+End}{lonEnd}}
+{\footnotesize\ttfamily float Graph\+In\+Map.\+lon\+End = 6.\+8981233f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Second point to accuratly place points in Unity 
+
+Value of the longitude of another reference point called Nav\+Destination\+End in Unity\mbox{\Hypertarget{classGraphInMap_ad976da0443161f13f73a84661e148cd5}\label{classGraphInMap_ad976da0443161f13f73a84661e148cd5}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!lon\+Origin@{lon\+Origin}}
+\index{lon\+Origin@{lon\+Origin}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{lon\+Origin}{lonOrigin}}
+{\footnotesize\ttfamily float Graph\+In\+Map.\+lon\+Origin = 6.\+8416914f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Reference positions ((x,y) origin) when converted from a latitude-\/longitude coordinate system to and a 2 dimensions cartésian coordinate system 
+
+Value of the longitude of the 340000377 Open\+Street\+Map node
+
+Arbitrary chosen node 340000377\mbox{\Hypertarget{classGraphInMap_a2781188e0f0f11ccff75ff0d07c7596d}\label{classGraphInMap_a2781188e0f0f11ccff75ff0d07c7596d}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!lon\+Ref@{lon\+Ref}}
+\index{lon\+Ref@{lon\+Ref}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{lon\+Ref}{lonRef}}
+{\footnotesize\ttfamily float Graph\+In\+Map.\+lon\+Ref = Mathf.\+Cos(\hyperlink{classGraphInMap_ad976da0443161f13f73a84661e148cd5}{lon\+Origin} $\ast$ (float) Math.\+PI / 180f)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Computed value of the longitude reference. 
+
+Reuse the computed value\mbox{\Hypertarget{classGraphInMap_a612a84b6c2a70a8f5fd73db6cc012ae3}\label{classGraphInMap_a612a84b6c2a70a8f5fd73db6cc012ae3}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!osm\+File@{osm\+File}}
+\index{osm\+File@{osm\+File}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{osm\+File}{osmFile}}
+{\footnotesize\ttfamily string Graph\+In\+Map.\+osm\+File}
+
+\mbox{\Hypertarget{classGraphInMap_ab4e6ee3792c7cf819b1816c24acdcb24}\label{classGraphInMap_ab4e6ee3792c7cf819b1816c24acdcb24}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!p@{p}}
+\index{p@{p}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \hyperlink{classBusLineParser}{Bus\+Line\+Parser} Graph\+In\+Map.\+p\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classGraphInMap_ae6baf9b727da8e55d0634912f4e32913}\label{classGraphInMap_ae6baf9b727da8e55d0634912f4e32913}} 
+\index{Graph\+In\+Map@{Graph\+In\+Map}!R@{R}}
+\index{R@{R}!Graph\+In\+Map@{Graph\+In\+Map}}
+\subsubsection{\texorpdfstring{R}{R}}
+{\footnotesize\ttfamily float Graph\+In\+Map.\+R = 6371e3f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Earth radius
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+map\+Builder/\+Assets/\+Scripts/\+Assets Scripts/\hyperlink{GraphInMap_8cs}{Graph\+In\+Map.\+cs}\end{DoxyCompactItemize}

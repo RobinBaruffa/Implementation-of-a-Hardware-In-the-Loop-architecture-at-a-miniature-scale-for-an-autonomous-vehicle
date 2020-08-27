@@ -1,0 +1,8 @@
+prefix=/home/user/MRbot_ws/devel
+
+Name: distance_calculation
+Description: Description of distance_calculation
+Version: 0.0.0
+Cflags: -I/home/user/MRbot_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

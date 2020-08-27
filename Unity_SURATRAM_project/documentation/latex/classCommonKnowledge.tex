@@ -1,0 +1,333 @@
+\hypertarget{classCommonKnowledge}{}\section{Common\+Knowledge Class Reference}
+\label{classCommonKnowledge}\index{Common\+Knowledge@{Common\+Knowledge}}
+
+
+Class that contains the informations shared by the Ants.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCommonKnowledge_a19b7dc1389bd6e507e8b7517f2b4ac44}{Common\+Knowledge} (\hyperlink{classGraph}{Graph} \hyperlink{classCommonKnowledge_afe6268d0091d9477d594b7207a9b0d8b}{g}, \hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a968607c5b3027dc7db9178375a2071f2}{start}, \hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a32a5f87ad72c95bbe3e3aabca913a5a6}{end}, float \hyperlink{classCommonKnowledge_ac477ae6e96dd6685bc1c4e977d3ad2b5}{evaporation}, float \hyperlink{classCommonKnowledge_a3a7589d86c441388b36cd87a92857a53}{alpha}, float \hyperlink{classCommonKnowledge_a08c6533f6981349a857792f8baecfc32}{beta}, int seed)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\hyperlink{classCommonKnowledge_a8715c63c9a71e9f83c4e101ece4f096f}{Common\+Knowledge} (\hyperlink{classGraph}{Graph} \hyperlink{classCommonKnowledge_afe6268d0091d9477d594b7207a9b0d8b}{g}, ulong id\+Start, ulong id\+End, float \hyperlink{classCommonKnowledge_ac477ae6e96dd6685bc1c4e977d3ad2b5}{evaporation}, float \hyperlink{classCommonKnowledge_a3a7589d86c441388b36cd87a92857a53}{alpha}, float \hyperlink{classCommonKnowledge_a08c6533f6981349a857792f8baecfc32}{beta}, int seed)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\hyperlink{classCommonKnowledge_a0c6b70bc64936bbba283b82fbe802017}{Common\+Knowledge} (\hyperlink{classGraph}{Graph} \hyperlink{classCommonKnowledge_afe6268d0091d9477d594b7207a9b0d8b}{g}, \hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a968607c5b3027dc7db9178375a2071f2}{start}, \hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a32a5f87ad72c95bbe3e3aabca913a5a6}{end})
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+\hyperlink{classCommonKnowledge_a02217aadbccc0f894b458e413e3ea16e}{Common\+Knowledge} (\hyperlink{classGraph}{Graph} \hyperlink{classCommonKnowledge_afe6268d0091d9477d594b7207a9b0d8b}{g}, ulong \hyperlink{classCommonKnowledge_a968607c5b3027dc7db9178375a2071f2}{start}, ulong \hyperlink{classCommonKnowledge_a32a5f87ad72c95bbe3e3aabca913a5a6}{end})
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+void \hyperlink{classCommonKnowledge_ac2325aee65d5cdc2ce638235000f71d9}{update\+Evaporation} ()
+\begin{DoxyCompactList}\small\item\em Updates the pheromones evaporation through all the edges. \end{DoxyCompactList}\item 
+void \hyperlink{classCommonKnowledge_ad18edb991c970daa0a21330896f37882}{add\+Pheromones} (List$<$ \hyperlink{classEdgeAntColonyData}{Edge\+Ant\+Colony\+Data} $>$ l, float d)
+\begin{DoxyCompactList}\small\item\em Add the pheromones to every list \char`\"{}l\char`\"{} \hyperlink{classEdge}{Edge} member. \end{DoxyCompactList}\item 
+void \hyperlink{classCommonKnowledge_a138990d0224d2ec75140944467f17489}{update\+Best\+Solution} (List$<$ \hyperlink{classEdgeAntColonyData}{Edge\+Ant\+Colony\+Data} $>$ l, float d)
+\begin{DoxyCompactList}\small\item\em This function updates the best\+Solution. Compares the actual solution with the best one and update the best solution. \end{DoxyCompactList}\item 
+void \hyperlink{classCommonKnowledge_a1ee7ccaca706571bb8a5db625d57413e}{init\+Edges\+Values} ()
+\begin{DoxyCompactList}\small\item\em Initialise for the \hyperlink{classAnt}{Ant} Colony Algorithm every edge in the \hyperlink{classGraph}{Graph}. \end{DoxyCompactList}\item 
+void \hyperlink{classCommonKnowledge_a02951b11f4a27b4b2a99b4b82a57f467}{init\+Common\+Knowledge} ()
+\begin{DoxyCompactList}\small\item\em Function that initialize the \hyperlink{classCommonKnowledge}{Common\+Knowledge} class. \end{DoxyCompactList}\item 
+void \hyperlink{classCommonKnowledge_aa62a58eb879f2b8e331ca27f9294162e}{set\+Start\+And\+End} (\hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a968607c5b3027dc7db9178375a2071f2}{start}, \hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a32a5f87ad72c95bbe3e3aabca913a5a6}{end})
+\begin{DoxyCompactList}\small\item\em Setter on the start and the end the \hyperlink{classAnt}{Ant} Colony Algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGraph}{Graph} \hyperlink{classCommonKnowledge_afe6268d0091d9477d594b7207a9b0d8b}{g}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classGraph}{Graph} shared by Ants\end{DoxyCompactList}\item 
+\hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a968607c5b3027dc7db9178375a2071f2}{start}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The starting \hyperlink{structVertex}{Vertex}.\end{DoxyCompactList}\item 
+\hyperlink{classVertexNode}{Vertex\+Node} \hyperlink{classCommonKnowledge_a32a5f87ad72c95bbe3e3aabca913a5a6}{end}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The ending \hyperlink{structVertex}{Vertex}.\end{DoxyCompactList}\item 
+List$<$ \hyperlink{classEdgeAntColonyData}{Edge\+Ant\+Colony\+Data} $>$ \hyperlink{classCommonKnowledge_a1bcd984ab757e6cd11f7b568fb509104}{best\+Path}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The path of the current best solution.\end{DoxyCompactList}\item 
+float \hyperlink{classCommonKnowledge_a6f2a9fec7495d2ce0cf70db304bd28a9}{best\+Path\+Distance}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The value of the current best solution.\end{DoxyCompactList}\item 
+float \hyperlink{classCommonKnowledge_ac477ae6e96dd6685bc1c4e977d3ad2b5}{evaporation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The evaporation factor. Correspond to (1 -\/ evaporation), with 0 $<$= evaporation $<$= 1\end{DoxyCompactList}\item 
+float \hyperlink{classCommonKnowledge_a3a7589d86c441388b36cd87a92857a53}{alpha}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The weight of the pheromones.\end{DoxyCompactList}\item 
+float \hyperlink{classCommonKnowledge_a08c6533f6981349a857792f8baecfc32}{beta}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The weight of the path length.\end{DoxyCompactList}\item 
+System.\+Random \hyperlink{classCommonKnowledge_aadb41354867c487a995404dc63cb3bd3}{rand}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The random for the Ants.\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that contains the informations shared by the Ants. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCommonKnowledge_a19b7dc1389bd6e507e8b7517f2b4ac44}\label{classCommonKnowledge_a19b7dc1389bd6e507e8b7517f2b4ac44}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{Common\+Knowledge()}{CommonKnowledge()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Common\+Knowledge.\+Common\+Knowledge (\begin{DoxyParamCaption}\item[{\hyperlink{classGraph}{Graph}}]{g,  }\item[{\hyperlink{classVertexNode}{Vertex\+Node}}]{start,  }\item[{\hyperlink{classVertexNode}{Vertex\+Node}}]{end,  }\item[{float}]{evaporation,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph where the \hyperlink{classAnt}{Ant} Colony is executed.\\
+\hline
+{\em start} & The starting \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+{\em end} & The ending \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+{\em evaporation} & The factor of pheromones evaporation.\\
+\hline
+{\em alpha} & The weight of the pheromones.\\
+\hline
+{\em beta} & The weight of the path length.\\
+\hline
+{\em seed} & Seed for the random.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommonKnowledge_a8715c63c9a71e9f83c4e101ece4f096f}\label{classCommonKnowledge_a8715c63c9a71e9f83c4e101ece4f096f}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{Common\+Knowledge()}{CommonKnowledge()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Common\+Knowledge.\+Common\+Knowledge (\begin{DoxyParamCaption}\item[{\hyperlink{classGraph}{Graph}}]{g,  }\item[{ulong}]{id\+Start,  }\item[{ulong}]{id\+End,  }\item[{float}]{evaporation,  }\item[{float}]{alpha,  }\item[{float}]{beta,  }\item[{int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph where the \hyperlink{classAnt}{Ant} Colony is executed.\\
+\hline
+{\em start} & The id of the starting \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+{\em end} & The id of the ending \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+{\em evaporation} & The factor of pheromones evaporation.\\
+\hline
+{\em alpha} & The weight of the pheromones.\\
+\hline
+{\em beta} & The weight of the path length.\\
+\hline
+{\em seed} & Seed for the random.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommonKnowledge_a0c6b70bc64936bbba283b82fbe802017}\label{classCommonKnowledge_a0c6b70bc64936bbba283b82fbe802017}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{Common\+Knowledge()}{CommonKnowledge()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Common\+Knowledge.\+Common\+Knowledge (\begin{DoxyParamCaption}\item[{\hyperlink{classGraph}{Graph}}]{g,  }\item[{\hyperlink{classVertexNode}{Vertex\+Node}}]{start,  }\item[{\hyperlink{classVertexNode}{Vertex\+Node}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph where the \hyperlink{classAnt}{Ant} Colony is executed.\\
+\hline
+{\em start} & The starting \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+{\em end} & The ending \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommonKnowledge_a02217aadbccc0f894b458e413e3ea16e}\label{classCommonKnowledge_a02217aadbccc0f894b458e413e3ea16e}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\index{Common\+Knowledge@{Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{Common\+Knowledge()}{CommonKnowledge()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Common\+Knowledge.\+Common\+Knowledge (\begin{DoxyParamCaption}\item[{\hyperlink{classGraph}{Graph}}]{g,  }\item[{ulong}]{start,  }\item[{ulong}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The graph where the \hyperlink{classAnt}{Ant} Colony is executed.\\
+\hline
+{\em start} & The id of the starting \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+{\em end} & The id of the ending \hyperlink{structVertex}{Vertex} for the algorithm.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommonKnowledge_ad18edb991c970daa0a21330896f37882}\label{classCommonKnowledge_ad18edb991c970daa0a21330896f37882}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!add\+Pheromones@{add\+Pheromones}}
+\index{add\+Pheromones@{add\+Pheromones}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{add\+Pheromones()}{addPheromones()}}
+{\footnotesize\ttfamily void Common\+Knowledge.\+add\+Pheromones (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{classEdgeAntColonyData}{Edge\+Ant\+Colony\+Data} $>$}]{l,  }\item[{float}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add the pheromones to every list \char`\"{}l\char`\"{} \hyperlink{classEdge}{Edge} member. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The path of the \hyperlink{classAnt}{Ant}.\\
+\hline
+{\em d} & The total distance of the path made by the \hyperlink{classAnt}{Ant}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommonKnowledge_a02951b11f4a27b4b2a99b4b82a57f467}\label{classCommonKnowledge_a02951b11f4a27b4b2a99b4b82a57f467}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!init\+Common\+Knowledge@{init\+Common\+Knowledge}}
+\index{init\+Common\+Knowledge@{init\+Common\+Knowledge}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{init\+Common\+Knowledge()}{initCommonKnowledge()}}
+{\footnotesize\ttfamily void Common\+Knowledge.\+init\+Common\+Knowledge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function that initialize the \hyperlink{classCommonKnowledge}{Common\+Knowledge} class. 
+
+\mbox{\Hypertarget{classCommonKnowledge_a1ee7ccaca706571bb8a5db625d57413e}\label{classCommonKnowledge_a1ee7ccaca706571bb8a5db625d57413e}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!init\+Edges\+Values@{init\+Edges\+Values}}
+\index{init\+Edges\+Values@{init\+Edges\+Values}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{init\+Edges\+Values()}{initEdgesValues()}}
+{\footnotesize\ttfamily void Common\+Knowledge.\+init\+Edges\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialise for the \hyperlink{classAnt}{Ant} Colony Algorithm every edge in the \hyperlink{classGraph}{Graph}. 
+
+\mbox{\Hypertarget{classCommonKnowledge_aa62a58eb879f2b8e331ca27f9294162e}\label{classCommonKnowledge_aa62a58eb879f2b8e331ca27f9294162e}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!set\+Start\+And\+End@{set\+Start\+And\+End}}
+\index{set\+Start\+And\+End@{set\+Start\+And\+End}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{set\+Start\+And\+End()}{setStartAndEnd()}}
+{\footnotesize\ttfamily void Common\+Knowledge.\+set\+Start\+And\+End (\begin{DoxyParamCaption}\item[{\hyperlink{classVertexNode}{Vertex\+Node}}]{start,  }\item[{\hyperlink{classVertexNode}{Vertex\+Node}}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter on the start and the end the \hyperlink{classAnt}{Ant} Colony Algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The starting \hyperlink{structVertex}{Vertex}.\\
+\hline
+{\em end} & The ending \hyperlink{structVertex}{Vertex}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommonKnowledge_a138990d0224d2ec75140944467f17489}\label{classCommonKnowledge_a138990d0224d2ec75140944467f17489}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!update\+Best\+Solution@{update\+Best\+Solution}}
+\index{update\+Best\+Solution@{update\+Best\+Solution}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{update\+Best\+Solution()}{updateBestSolution()}}
+{\footnotesize\ttfamily void Common\+Knowledge.\+update\+Best\+Solution (\begin{DoxyParamCaption}\item[{List$<$ \hyperlink{classEdgeAntColonyData}{Edge\+Ant\+Colony\+Data} $>$}]{l,  }\item[{float}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function updates the best\+Solution. Compares the actual solution with the best one and update the best solution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The path of the \hyperlink{classAnt}{Ant}.\\
+\hline
+{\em d} & The total distance of the path made by the \hyperlink{classAnt}{Ant}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCommonKnowledge_ac2325aee65d5cdc2ce638235000f71d9}\label{classCommonKnowledge_ac2325aee65d5cdc2ce638235000f71d9}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!update\+Evaporation@{update\+Evaporation}}
+\index{update\+Evaporation@{update\+Evaporation}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{update\+Evaporation()}{updateEvaporation()}}
+{\footnotesize\ttfamily void Common\+Knowledge.\+update\+Evaporation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the pheromones evaporation through all the edges. 
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classCommonKnowledge_a3a7589d86c441388b36cd87a92857a53}\label{classCommonKnowledge_a3a7589d86c441388b36cd87a92857a53}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!alpha@{alpha}}
+\index{alpha@{alpha}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily float Common\+Knowledge.\+alpha\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The weight of the pheromones.
+
+\mbox{\Hypertarget{classCommonKnowledge_a1bcd984ab757e6cd11f7b568fb509104}\label{classCommonKnowledge_a1bcd984ab757e6cd11f7b568fb509104}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!best\+Path@{best\+Path}}
+\index{best\+Path@{best\+Path}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{best\+Path}{bestPath}}
+{\footnotesize\ttfamily List$<$\hyperlink{classEdgeAntColonyData}{Edge\+Ant\+Colony\+Data}$>$ Common\+Knowledge.\+best\+Path\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The path of the current best solution.
+
+\mbox{\Hypertarget{classCommonKnowledge_a6f2a9fec7495d2ce0cf70db304bd28a9}\label{classCommonKnowledge_a6f2a9fec7495d2ce0cf70db304bd28a9}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!best\+Path\+Distance@{best\+Path\+Distance}}
+\index{best\+Path\+Distance@{best\+Path\+Distance}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{best\+Path\+Distance}{bestPathDistance}}
+{\footnotesize\ttfamily float Common\+Knowledge.\+best\+Path\+Distance\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The value of the current best solution.
+
+\mbox{\Hypertarget{classCommonKnowledge_a08c6533f6981349a857792f8baecfc32}\label{classCommonKnowledge_a08c6533f6981349a857792f8baecfc32}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!beta@{beta}}
+\index{beta@{beta}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{beta}{beta}}
+{\footnotesize\ttfamily float Common\+Knowledge.\+beta\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The weight of the path length.
+
+\mbox{\Hypertarget{classCommonKnowledge_a32a5f87ad72c95bbe3e3aabca913a5a6}\label{classCommonKnowledge_a32a5f87ad72c95bbe3e3aabca913a5a6}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!end@{end}}
+\index{end@{end}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \hyperlink{classVertexNode}{Vertex\+Node} Common\+Knowledge.\+end\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The ending \hyperlink{structVertex}{Vertex}.
+
+\mbox{\Hypertarget{classCommonKnowledge_ac477ae6e96dd6685bc1c4e977d3ad2b5}\label{classCommonKnowledge_ac477ae6e96dd6685bc1c4e977d3ad2b5}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!evaporation@{evaporation}}
+\index{evaporation@{evaporation}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{evaporation}{evaporation}}
+{\footnotesize\ttfamily float Common\+Knowledge.\+evaporation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The evaporation factor. Correspond to (1 -\/ evaporation), with 0 $<$= evaporation $<$= 1
+
+\mbox{\Hypertarget{classCommonKnowledge_afe6268d0091d9477d594b7207a9b0d8b}\label{classCommonKnowledge_afe6268d0091d9477d594b7207a9b0d8b}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!g@{g}}
+\index{g@{g}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily \hyperlink{classGraph}{Graph} Common\+Knowledge.\+g\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+\hyperlink{classGraph}{Graph} shared by Ants
+
+\mbox{\Hypertarget{classCommonKnowledge_aadb41354867c487a995404dc63cb3bd3}\label{classCommonKnowledge_aadb41354867c487a995404dc63cb3bd3}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!rand@{rand}}
+\index{rand@{rand}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{rand}{rand}}
+{\footnotesize\ttfamily System.\+Random Common\+Knowledge.\+rand\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The random for the Ants.
+
+\mbox{\Hypertarget{classCommonKnowledge_a968607c5b3027dc7db9178375a2071f2}\label{classCommonKnowledge_a968607c5b3027dc7db9178375a2071f2}} 
+\index{Common\+Knowledge@{Common\+Knowledge}!start@{start}}
+\index{start@{start}!Common\+Knowledge@{Common\+Knowledge}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \hyperlink{classVertexNode}{Vertex\+Node} Common\+Knowledge.\+start\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}
+
+
+
+The starting \hyperlink{structVertex}{Vertex}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+map\+Builder/\+Assets/\+Scripts/\+Ant\+Colony/\hyperlink{CommonKnowledge_8cs}{Common\+Knowledge.\+cs}\end{DoxyCompactItemize}

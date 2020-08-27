@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>mr_sensor_handler</name>
+    <version>0.0.0</version>
+    <description>Receive sensor infos from MRSim</description>
+    <license>GPLv3</license>
+    <author email="jacques.pereira@utbm.fr">Robin BARUFFA</author>
+    <maintainer email="jacques.pereira@utbm.fr">mrBot</maintainer>
+
+    <buildtool_depend>catkin</buildtool_depend>
+    <depend>rospy</depend>
+    <depend>std_msgs</depend>
+    <exec_depend>message_runtime</exec_depend>
+</package>

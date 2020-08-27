@@ -1,0 +1,24 @@
+<launch>
+
+	<arg name="control" default="gui"/>
+
+	<param name="Translation_speed_max" type="int" value="1" />
+	<param name="Rotation_speed_max" type="int" value="1" />
+
+
+	<param name="Gui_publisher_topic_name" type="str" value="/velocity_command" if="$(eval control == 'gui')"/>
+	<param name="Gui_size" type="int" value="500" if="$(eval control == 'gui')"/>
+	<!--
+	<node name="gui_node" pkg="gui" type="gui_node.py" if="$(eval control == 'gui')"/>
+	<node pkg="joy" type="joy_node" if="$(eval control == 'joystick')" name="ps3_joy" output="screen" >
+		<param name="dev" type="string" value="/dev/input/js0" />
+		<param name="deadzone" value="0.12" />
+	</node>
+	<node pkg="ps3joy" type="ps3joy.py" if="$(eval control == 'joystick')" name="ps3_bluetooth_node"/>
+	<node pkg="joy_to_twist" type="joy_to_twist.py" if="$(eval control == 'joystick')" name="joy_to_twist_node"/>
+	-->
+
+	<node name="rqt_reconfigure" pkg="rqt_reconfigure" type="rqt_reconfigure" />
+	<node type="rviz" name="rviz" pkg="rviz" args="-d $(find robot_launch)/rviz/MRbot.rviz" />
+	<node type="rqt_multiplot" name="rqt_multiplot" pkg="rqt_multiplot" args="--multiplot-config $(find robot_launch)/rqt_multiplot/rqt_multiplot_distance_plot.xml" />
+</launch>

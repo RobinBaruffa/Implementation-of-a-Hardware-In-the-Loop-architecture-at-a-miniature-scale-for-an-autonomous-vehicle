@@ -1,0 +1,171 @@
+\hypertarget{classBezierSplineInspector}{}\section{Bezier\+Spline\+Inspector Class Reference}
+\label{classBezierSplineInspector}\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+
+
+Inheritance diagram for Bezier\+Spline\+Inspector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classBezierSplineInspector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bezier\+Spline\+Inspector\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classBezierSplineInspector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{classBezierSplineInspector_a3232a5fd28ba98bf7b5d4aa170546f31}{On\+Inspector\+G\+UI} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBezierSplineInspector_a1b5db10b5a3a743cbd2895cc61faad23}{On\+Scene\+G\+UI} ()
+\item 
+Vector3 \hyperlink{classBezierSplineInspector_a413aaf08e6210a0613ec05ee97ca93dc}{Show\+Point} (int index)
+\item 
+void \hyperlink{classBezierSplineInspector_a1fab28bf9747a0e23dcae459f9d965b7}{Show\+Directions} ()
+\item 
+void \hyperlink{classBezierSplineInspector_a9301f0b079b6a96ff147231bb6af0bfe}{Draw\+Selected\+Point\+Inspector} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classBezierSplineInspector_a6cc82c82cb437fc3a75a5b2b8f6d5789}{line\+Steps} = 10
+\item 
+const float \hyperlink{classBezierSplineInspector_a574e20490bad6dbaf9024fa6cc6d4d24}{direction\+Scale} = 0.\+5f
+\item 
+const int \hyperlink{classBezierSplineInspector_a444eba3ff5695e7b87c042ad7e2ee0aa}{steps\+Per\+Curve} = 10
+\item 
+const float \hyperlink{classBezierSplineInspector_ac9749fa64c910242d064f1a6c924fa98}{handle\+Size} = 0.\+04f
+\item 
+const float \hyperlink{classBezierSplineInspector_acc93b6778c8674ec2b57d48a1466bcd6}{pick\+Size} = 0.\+06f
+\item 
+int \hyperlink{classBezierSplineInspector_af0b7882ca31e32db00b624a622f001d1}{selected\+Index} = -\/1
+\item 
+\hyperlink{classBezierSpline}{Bezier\+Spline} \hyperlink{classBezierSplineInspector_a13f1a0472f67bdf873d1e34d2ed5ff32}{spline}
+\item 
+Transform \hyperlink{classBezierSplineInspector_a735dfdff25b8fd3ea904c73584648667}{handle\+Transform}
+\item 
+Quaternion \hyperlink{classBezierSplineInspector_a6ba4d222ada9cfeeb4f36e2649c4f286}{handle\+Rotation}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Color \mbox{[}$\,$\mbox{]} \hyperlink{classBezierSplineInspector_a20cbc0fdf235b0b9e2d349def79ba333}{mode\+Colors}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBezierSplineInspector_a9301f0b079b6a96ff147231bb6af0bfe}\label{classBezierSplineInspector_a9301f0b079b6a96ff147231bb6af0bfe}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!Draw\+Selected\+Point\+Inspector@{Draw\+Selected\+Point\+Inspector}}
+\index{Draw\+Selected\+Point\+Inspector@{Draw\+Selected\+Point\+Inspector}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{Draw\+Selected\+Point\+Inspector()}{DrawSelectedPointInspector()}}
+{\footnotesize\ttfamily void Bezier\+Spline\+Inspector.\+Draw\+Selected\+Point\+Inspector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a3232a5fd28ba98bf7b5d4aa170546f31}\label{classBezierSplineInspector_a3232a5fd28ba98bf7b5d4aa170546f31}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!On\+Inspector\+G\+UI@{On\+Inspector\+G\+UI}}
+\index{On\+Inspector\+G\+UI@{On\+Inspector\+G\+UI}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{On\+Inspector\+G\+U\+I()}{OnInspectorGUI()}}
+{\footnotesize\ttfamily override void Bezier\+Spline\+Inspector.\+On\+Inspector\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a1b5db10b5a3a743cbd2895cc61faad23}\label{classBezierSplineInspector_a1b5db10b5a3a743cbd2895cc61faad23}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!On\+Scene\+G\+UI@{On\+Scene\+G\+UI}}
+\index{On\+Scene\+G\+UI@{On\+Scene\+G\+UI}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{On\+Scene\+G\+U\+I()}{OnSceneGUI()}}
+{\footnotesize\ttfamily void Bezier\+Spline\+Inspector.\+On\+Scene\+G\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a1fab28bf9747a0e23dcae459f9d965b7}\label{classBezierSplineInspector_a1fab28bf9747a0e23dcae459f9d965b7}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!Show\+Directions@{Show\+Directions}}
+\index{Show\+Directions@{Show\+Directions}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{Show\+Directions()}{ShowDirections()}}
+{\footnotesize\ttfamily void Bezier\+Spline\+Inspector.\+Show\+Directions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a413aaf08e6210a0613ec05ee97ca93dc}\label{classBezierSplineInspector_a413aaf08e6210a0613ec05ee97ca93dc}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!Show\+Point@{Show\+Point}}
+\index{Show\+Point@{Show\+Point}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{Show\+Point()}{ShowPoint()}}
+{\footnotesize\ttfamily Vector3 Bezier\+Spline\+Inspector.\+Show\+Point (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBezierSplineInspector_a574e20490bad6dbaf9024fa6cc6d4d24}\label{classBezierSplineInspector_a574e20490bad6dbaf9024fa6cc6d4d24}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!direction\+Scale@{direction\+Scale}}
+\index{direction\+Scale@{direction\+Scale}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{direction\+Scale}{directionScale}}
+{\footnotesize\ttfamily const float Bezier\+Spline\+Inspector.\+direction\+Scale = 0.\+5f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a6ba4d222ada9cfeeb4f36e2649c4f286}\label{classBezierSplineInspector_a6ba4d222ada9cfeeb4f36e2649c4f286}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!handle\+Rotation@{handle\+Rotation}}
+\index{handle\+Rotation@{handle\+Rotation}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{handle\+Rotation}{handleRotation}}
+{\footnotesize\ttfamily Quaternion Bezier\+Spline\+Inspector.\+handle\+Rotation\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_ac9749fa64c910242d064f1a6c924fa98}\label{classBezierSplineInspector_ac9749fa64c910242d064f1a6c924fa98}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!handle\+Size@{handle\+Size}}
+\index{handle\+Size@{handle\+Size}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{handle\+Size}{handleSize}}
+{\footnotesize\ttfamily const float Bezier\+Spline\+Inspector.\+handle\+Size = 0.\+04f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a735dfdff25b8fd3ea904c73584648667}\label{classBezierSplineInspector_a735dfdff25b8fd3ea904c73584648667}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!handle\+Transform@{handle\+Transform}}
+\index{handle\+Transform@{handle\+Transform}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{handle\+Transform}{handleTransform}}
+{\footnotesize\ttfamily Transform Bezier\+Spline\+Inspector.\+handle\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a6cc82c82cb437fc3a75a5b2b8f6d5789}\label{classBezierSplineInspector_a6cc82c82cb437fc3a75a5b2b8f6d5789}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!line\+Steps@{line\+Steps}}
+\index{line\+Steps@{line\+Steps}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{line\+Steps}{lineSteps}}
+{\footnotesize\ttfamily const int Bezier\+Spline\+Inspector.\+line\+Steps = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a20cbc0fdf235b0b9e2d349def79ba333}\label{classBezierSplineInspector_a20cbc0fdf235b0b9e2d349def79ba333}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!mode\+Colors@{mode\+Colors}}
+\index{mode\+Colors@{mode\+Colors}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{mode\+Colors}{modeColors}}
+{\footnotesize\ttfamily Color \mbox{[}$\,$\mbox{]} Bezier\+Spline\+Inspector.\+mode\+Colors\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \{
+      Color.white,
+      Color.yellow,
+      Color.cyan
+   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classBezierSplineInspector_acc93b6778c8674ec2b57d48a1466bcd6}\label{classBezierSplineInspector_acc93b6778c8674ec2b57d48a1466bcd6}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!pick\+Size@{pick\+Size}}
+\index{pick\+Size@{pick\+Size}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{pick\+Size}{pickSize}}
+{\footnotesize\ttfamily const float Bezier\+Spline\+Inspector.\+pick\+Size = 0.\+06f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_af0b7882ca31e32db00b624a622f001d1}\label{classBezierSplineInspector_af0b7882ca31e32db00b624a622f001d1}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!selected\+Index@{selected\+Index}}
+\index{selected\+Index@{selected\+Index}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{selected\+Index}{selectedIndex}}
+{\footnotesize\ttfamily int Bezier\+Spline\+Inspector.\+selected\+Index = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a13f1a0472f67bdf873d1e34d2ed5ff32}\label{classBezierSplineInspector_a13f1a0472f67bdf873d1e34d2ed5ff32}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!spline@{spline}}
+\index{spline@{spline}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{spline}{spline}}
+{\footnotesize\ttfamily \hyperlink{classBezierSpline}{Bezier\+Spline} Bezier\+Spline\+Inspector.\+spline\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSplineInspector_a444eba3ff5695e7b87c042ad7e2ee0aa}\label{classBezierSplineInspector_a444eba3ff5695e7b87c042ad7e2ee0aa}} 
+\index{Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}!steps\+Per\+Curve@{steps\+Per\+Curve}}
+\index{steps\+Per\+Curve@{steps\+Per\+Curve}!Bezier\+Spline\+Inspector@{Bezier\+Spline\+Inspector}}
+\subsubsection{\texorpdfstring{steps\+Per\+Curve}{stepsPerCurve}}
+{\footnotesize\ttfamily const int Bezier\+Spline\+Inspector.\+steps\+Per\+Curve = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+mixed\+Reality\+Simulator/\+Assets/\+Scripts/\+Bezier/\+Editor/\hyperlink{BezierSplineInspector_8cs}{Bezier\+Spline\+Inspector.\+cs}\end{DoxyCompactItemize}

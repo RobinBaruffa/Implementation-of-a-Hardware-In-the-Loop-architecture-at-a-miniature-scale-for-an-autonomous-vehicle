@@ -1,0 +1,174 @@
+\hypertarget{classBezierSpline}{}\section{Bezier\+Spline Class Reference}
+\label{classBezierSpline}\index{Bezier\+Spline@{Bezier\+Spline}}
+
+
+Inheritance diagram for Bezier\+Spline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classBezierSpline__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bezier\+Spline\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classBezierSpline__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \hyperlink{classBezierSpline_a4a9993e2dafa4a6b8819d94a25c70245}{Get\+Point} (float t)
+\item 
+Vector3 \hyperlink{classBezierSpline_a0d8c73af995773501fd3e5c4dac4c3b6}{Get\+Velocity} (float t)
+\item 
+Vector3 \hyperlink{classBezierSpline_a24c9b2087b16b650871a9ed2355987cc}{Get\+Direction} (float t)
+\item 
+void \hyperlink{classBezierSpline_a4676e1c6d2cfc8454c028e30d54783bd}{Add\+Curve} ()
+\item 
+void \hyperlink{classBezierSpline_a69c0d6f430f28fec72bffb8812861247}{Reset} ()
+\item 
+Vector3 \hyperlink{classBezierSpline_aee83e5e470e3d7d23f75875c81bbd326}{Get\+Control\+Point} (int index)
+\item 
+void \hyperlink{classBezierSpline_aed423df0d5f7c31a82a617ad8ebc23e4}{Set\+Control\+Point} (int index, Vector3 point)
+\item 
+\hyperlink{BezierControlPointMode_8cs_a41ff1a7271616f36cab397d937ee41b0}{Bezier\+Control\+Point\+Mode} \hyperlink{classBezierSpline_a1600b5bf35f1aa796e5fbe227b5a767d}{Get\+Control\+Point\+Mode} (int index)
+\item 
+void \hyperlink{classBezierSpline_a5c538c5216c5743de35ce9999760749c}{Set\+Control\+Point\+Mode} (int index, \hyperlink{BezierControlPointMode_8cs_a41ff1a7271616f36cab397d937ee41b0}{Bezier\+Control\+Point\+Mode} mode)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classBezierSpline_a9b13fb8edeb86c6166fbd091b044eb63}{Loop}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \hyperlink{classBezierSpline_a953275346ac1b490473e3500c06b6286}{Curve\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \hyperlink{classBezierSpline_acb5b34c12c98bdf6b0ec0917009b1626}{Control\+Point\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBezierSpline_a9ce5f77aeb9b671034ce0845f8539166}{Enforce\+Mode} (int index)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Vector3 \mbox{[}$\,$\mbox{]} \hyperlink{classBezierSpline_adda54d62157465856c511f0b94fd78d9}{points}
+\item 
+\hyperlink{BezierControlPointMode_8cs_a41ff1a7271616f36cab397d937ee41b0}{Bezier\+Control\+Point\+Mode} \mbox{[}$\,$\mbox{]} \hyperlink{classBezierSpline_affe3fe5b3977dfedf13f40e433363010}{modes}
+\item 
+bool \hyperlink{classBezierSpline_a819d3c15ebc913ed8da39daa07fd89a7}{loop}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBezierSpline_a4676e1c6d2cfc8454c028e30d54783bd}\label{classBezierSpline_a4676e1c6d2cfc8454c028e30d54783bd}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Add\+Curve@{Add\+Curve}}
+\index{Add\+Curve@{Add\+Curve}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Add\+Curve()}{AddCurve()}}
+{\footnotesize\ttfamily void Bezier\+Spline.\+Add\+Curve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_a9ce5f77aeb9b671034ce0845f8539166}\label{classBezierSpline_a9ce5f77aeb9b671034ce0845f8539166}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Enforce\+Mode@{Enforce\+Mode}}
+\index{Enforce\+Mode@{Enforce\+Mode}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Enforce\+Mode()}{EnforceMode()}}
+{\footnotesize\ttfamily void Bezier\+Spline.\+Enforce\+Mode (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSpline_aee83e5e470e3d7d23f75875c81bbd326}\label{classBezierSpline_aee83e5e470e3d7d23f75875c81bbd326}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Get\+Control\+Point@{Get\+Control\+Point}}
+\index{Get\+Control\+Point@{Get\+Control\+Point}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Get\+Control\+Point()}{GetControlPoint()}}
+{\footnotesize\ttfamily Vector3 Bezier\+Spline.\+Get\+Control\+Point (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_a1600b5bf35f1aa796e5fbe227b5a767d}\label{classBezierSpline_a1600b5bf35f1aa796e5fbe227b5a767d}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Get\+Control\+Point\+Mode@{Get\+Control\+Point\+Mode}}
+\index{Get\+Control\+Point\+Mode@{Get\+Control\+Point\+Mode}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Get\+Control\+Point\+Mode()}{GetControlPointMode()}}
+{\footnotesize\ttfamily \hyperlink{BezierControlPointMode_8cs_a41ff1a7271616f36cab397d937ee41b0}{Bezier\+Control\+Point\+Mode} Bezier\+Spline.\+Get\+Control\+Point\+Mode (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_a24c9b2087b16b650871a9ed2355987cc}\label{classBezierSpline_a24c9b2087b16b650871a9ed2355987cc}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily Vector3 Bezier\+Spline.\+Get\+Direction (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_a4a9993e2dafa4a6b8819d94a25c70245}\label{classBezierSpline_a4a9993e2dafa4a6b8819d94a25c70245}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Get\+Point@{Get\+Point}}
+\index{Get\+Point@{Get\+Point}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Get\+Point()}{GetPoint()}}
+{\footnotesize\ttfamily Vector3 Bezier\+Spline.\+Get\+Point (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_a0d8c73af995773501fd3e5c4dac4c3b6}\label{classBezierSpline_a0d8c73af995773501fd3e5c4dac4c3b6}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Get\+Velocity@{Get\+Velocity}}
+\index{Get\+Velocity@{Get\+Velocity}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Get\+Velocity()}{GetVelocity()}}
+{\footnotesize\ttfamily Vector3 Bezier\+Spline.\+Get\+Velocity (\begin{DoxyParamCaption}\item[{float}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_a69c0d6f430f28fec72bffb8812861247}\label{classBezierSpline_a69c0d6f430f28fec72bffb8812861247}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Reset@{Reset}}
+\index{Reset@{Reset}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Bezier\+Spline.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_aed423df0d5f7c31a82a617ad8ebc23e4}\label{classBezierSpline_aed423df0d5f7c31a82a617ad8ebc23e4}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Set\+Control\+Point@{Set\+Control\+Point}}
+\index{Set\+Control\+Point@{Set\+Control\+Point}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Set\+Control\+Point()}{SetControlPoint()}}
+{\footnotesize\ttfamily void Bezier\+Spline.\+Set\+Control\+Point (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{Vector3}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBezierSpline_a5c538c5216c5743de35ce9999760749c}\label{classBezierSpline_a5c538c5216c5743de35ce9999760749c}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Set\+Control\+Point\+Mode@{Set\+Control\+Point\+Mode}}
+\index{Set\+Control\+Point\+Mode@{Set\+Control\+Point\+Mode}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Set\+Control\+Point\+Mode()}{SetControlPointMode()}}
+{\footnotesize\ttfamily void Bezier\+Spline.\+Set\+Control\+Point\+Mode (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\hyperlink{BezierControlPointMode_8cs_a41ff1a7271616f36cab397d937ee41b0}{Bezier\+Control\+Point\+Mode}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBezierSpline_a819d3c15ebc913ed8da39daa07fd89a7}\label{classBezierSpline_a819d3c15ebc913ed8da39daa07fd89a7}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!loop@{loop}}
+\index{loop@{loop}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily bool Bezier\+Spline.\+loop\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSpline_affe3fe5b3977dfedf13f40e433363010}\label{classBezierSpline_affe3fe5b3977dfedf13f40e433363010}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!modes@{modes}}
+\index{modes@{modes}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{modes}{modes}}
+{\footnotesize\ttfamily \hyperlink{BezierControlPointMode_8cs_a41ff1a7271616f36cab397d937ee41b0}{Bezier\+Control\+Point\+Mode} \mbox{[}$\,$\mbox{]} Bezier\+Spline.\+modes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classBezierSpline_adda54d62157465856c511f0b94fd78d9}\label{classBezierSpline_adda54d62157465856c511f0b94fd78d9}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!points@{points}}
+\index{points@{points}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily Vector3 \mbox{[}$\,$\mbox{]} Bezier\+Spline.\+points\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{classBezierSpline_acb5b34c12c98bdf6b0ec0917009b1626}\label{classBezierSpline_acb5b34c12c98bdf6b0ec0917009b1626}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Control\+Point\+Count@{Control\+Point\+Count}}
+\index{Control\+Point\+Count@{Control\+Point\+Count}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Control\+Point\+Count}{ControlPointCount}}
+{\footnotesize\ttfamily int Bezier\+Spline.\+Control\+Point\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classBezierSpline_a953275346ac1b490473e3500c06b6286}\label{classBezierSpline_a953275346ac1b490473e3500c06b6286}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Curve\+Count@{Curve\+Count}}
+\index{Curve\+Count@{Curve\+Count}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Curve\+Count}{CurveCount}}
+{\footnotesize\ttfamily int Bezier\+Spline.\+Curve\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classBezierSpline_a9b13fb8edeb86c6166fbd091b044eb63}\label{classBezierSpline_a9b13fb8edeb86c6166fbd091b044eb63}} 
+\index{Bezier\+Spline@{Bezier\+Spline}!Loop@{Loop}}
+\index{Loop@{Loop}!Bezier\+Spline@{Bezier\+Spline}}
+\subsubsection{\texorpdfstring{Loop}{Loop}}
+{\footnotesize\ttfamily bool Bezier\+Spline.\+Loop\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+mixed\+Reality\+Simulator/\+Assets/\+Scripts/\+Bezier/\hyperlink{BezierSpline_8cs}{Bezier\+Spline.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~distance_setpoint" : \b [double] Parameter defining the distance setpoint min: 0.0, default: 7.0, max: 25.0
+- \b "~angle_setpoint" : \b [double] Parameter defining the angle setpoint min: -1.0, default: 0.0, max: 1.0
+

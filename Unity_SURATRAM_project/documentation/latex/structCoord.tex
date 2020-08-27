@@ -1,0 +1,161 @@
+\hypertarget{structCoord}{}\section{Coord Struct Reference}
+\label{structCoord}\index{Coord@{Coord}}
+
+
+The \hyperlink{structCoord}{Coord} structure stores the latitude and the longitude of a point.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structCoord_ab79364bcc0a8163ef89f35da474ab296}{set\+Coord} (float la, float lo)
+\begin{DoxyCompactList}\small\item\em Setter on latitude and longitude. \end{DoxyCompactList}\item 
+\hyperlink{structCoord_ac64010b7110b871868064d853b09435a}{Coord} (\hyperlink{structCoord}{Coord} c)
+\begin{DoxyCompactList}\small\item\em Copy constructor \end{DoxyCompactList}\item 
+\hyperlink{structCoord_a810b3b1d700e2066973eb243b4ec474b}{Coord} (float la, float lo)
+\begin{DoxyCompactList}\small\item\em Constructor \end{DoxyCompactList}\item 
+bool \hyperlink{structCoord_ab1c8eb195f1274c1869a13a835b927e2}{Equals} (\hyperlink{structCoord}{Coord} c)
+\begin{DoxyCompactList}\small\item\em Check if the coordinates are the same as another \hyperlink{structCoord}{Coord}. \end{DoxyCompactList}\item 
+override string \hyperlink{structCoord_a051a016fb4dcf8df16320d9d323f842e}{To\+String} ()
+\begin{DoxyCompactList}\small\item\em Outputs the class \hyperlink{structCoord}{Coord} in string format. \end{DoxyCompactList}\item 
+override int \hyperlink{structCoord_ac51299e2985ea7e24e73b40667e572f5}{Get\+Hash\+Code} ()
+\begin{DoxyCompactList}\small\item\em Get the Hash\+Code of the class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structCoord_adee2cdba9052e04aa6056c8e05900736}{lat}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The latitude of the point\end{DoxyCompactList}\item 
+float \hyperlink{structCoord_a11d9174715f32a5728e029fc4a32aaa2}{lon}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The longitude of the point\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{structCoord}{Coord} structure stores the latitude and the longitude of a point. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structCoord_ac64010b7110b871868064d853b09435a}\label{structCoord_ac64010b7110b871868064d853b09435a}} 
+\index{Coord@{Coord}!Coord@{Coord}}
+\index{Coord@{Coord}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{Coord()}{Coord()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Coord.\+Coord (\begin{DoxyParamCaption}\item[{\hyperlink{structCoord}{Coord}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The \hyperlink{structCoord}{Coord} to be copied\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structCoord_a810b3b1d700e2066973eb243b4ec474b}\label{structCoord_a810b3b1d700e2066973eb243b4ec474b}} 
+\index{Coord@{Coord}!Coord@{Coord}}
+\index{Coord@{Coord}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{Coord()}{Coord()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Coord.\+Coord (\begin{DoxyParamCaption}\item[{float}]{la,  }\item[{float}]{lo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & The latitude\\
+\hline
+{\em lo} & The longitude\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structCoord_ab1c8eb195f1274c1869a13a835b927e2}\label{structCoord_ab1c8eb195f1274c1869a13a835b927e2}} 
+\index{Coord@{Coord}!Equals@{Equals}}
+\index{Equals@{Equals}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{Equals()}{Equals()}}
+{\footnotesize\ttfamily bool Coord.\+Equals (\begin{DoxyParamCaption}\item[{\hyperlink{structCoord}{Coord}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Check if the coordinates are the same as another \hyperlink{structCoord}{Coord}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The coordinates to check with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if it is equals, else false
+\end{DoxyReturn}
+\mbox{\Hypertarget{structCoord_ac51299e2985ea7e24e73b40667e572f5}\label{structCoord_ac51299e2985ea7e24e73b40667e572f5}} 
+\index{Coord@{Coord}!Get\+Hash\+Code@{Get\+Hash\+Code}}
+\index{Get\+Hash\+Code@{Get\+Hash\+Code}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{Get\+Hash\+Code()}{GetHashCode()}}
+{\footnotesize\ttfamily override int Coord.\+Get\+Hash\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the Hash\+Code of the class 
+
+\begin{DoxyReturn}{Returns}
+Returns the Hash\+Code
+\end{DoxyReturn}
+\mbox{\Hypertarget{structCoord_ab79364bcc0a8163ef89f35da474ab296}\label{structCoord_ab79364bcc0a8163ef89f35da474ab296}} 
+\index{Coord@{Coord}!set\+Coord@{set\+Coord}}
+\index{set\+Coord@{set\+Coord}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{set\+Coord()}{setCoord()}}
+{\footnotesize\ttfamily void Coord.\+set\+Coord (\begin{DoxyParamCaption}\item[{float}]{la,  }\item[{float}]{lo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setter on latitude and longitude. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em la} & The latitude to set\\
+\hline
+{\em lo} & The longitude to set\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structCoord_a051a016fb4dcf8df16320d9d323f842e}\label{structCoord_a051a016fb4dcf8df16320d9d323f842e}} 
+\index{Coord@{Coord}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily override string Coord.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Outputs the class \hyperlink{structCoord}{Coord} in string format. 
+
+\begin{DoxyReturn}{Returns}
+The string
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{structCoord_adee2cdba9052e04aa6056c8e05900736}\label{structCoord_adee2cdba9052e04aa6056c8e05900736}} 
+\index{Coord@{Coord}!lat@{lat}}
+\index{lat@{lat}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{lat}{lat}}
+{\footnotesize\ttfamily float Coord.\+lat\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The latitude of the point
+
+\mbox{\Hypertarget{structCoord_a11d9174715f32a5728e029fc4a32aaa2}\label{structCoord_a11d9174715f32a5728e029fc4a32aaa2}} 
+\index{Coord@{Coord}!lon@{lon}}
+\index{lon@{lon}!Coord@{Coord}}
+\subsubsection{\texorpdfstring{lon}{lon}}
+{\footnotesize\ttfamily float Coord.\+lon\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The longitude of the point
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/root/\+Documents/\+Unity\+\_\+\+S\+T40/\+Suratram\+\_\+map\+Builder/\+Assets/\+Scripts/\+O\+S\+M\+Scripts/\hyperlink{distBetweenNodes_8cs}{dist\+Between\+Nodes.\+cs}\end{DoxyCompactItemize}

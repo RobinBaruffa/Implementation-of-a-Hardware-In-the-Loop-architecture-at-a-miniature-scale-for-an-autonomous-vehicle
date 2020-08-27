@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classDistBetweenNodes.html" title="Abstract class to computes the distance between two OpenStreetMap(OSM) nodes. " alt="" coords="5,31,140,57"/>
+<area shape="rect" id="node2" href="$classCompleteDistBetweenNodes.html" title="This class &quot;follows&quot; the bus path on osm to calculate precisely the distance between each node of the..." alt="" coords="188,5,379,32"/>
+<area shape="rect" id="node3" href="$classFastDistBetweenNodes.html" title="Class that computes a simple distance computation. Known as beeline. " alt="" coords="203,56,364,83"/>
+</map>
