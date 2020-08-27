@@ -1,0 +1,1 @@
+# Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle
