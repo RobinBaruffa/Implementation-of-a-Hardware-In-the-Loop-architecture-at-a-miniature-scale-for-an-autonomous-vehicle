@@ -15,7 +15,10 @@ The project served as a basis for writing and publishing a paper in SIMUL 2020 :
 
 The car is controlled by a Raspberry PI4 running Ubuntu 16.04 and the Robot Operating System (ROS) middleware. It can be controlled manually with a keyboard, a custom made GUI or a PS3 controller. It has a camera and an ultrasonic sensor. It is capable of using the camera to detect an aruco marker at the back of another robot, and can follow it while maintaining a dynamically modifiable safe following distance. The ultrasonic sensor is used in case of emergency if the camera readings are unavailable and can engage an emergency braking. 
 
-![](https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/omniROS_and_robot.JPG)
+
+Miniature car following a wheeled robot with an Aruco marker             |  Camera data overlaid with the estimated Aruco marker pose the PID control over the following distance
+:-------------------------:|:-------------------------:
+![](https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/omniROS_and_robot.JPG)  |  ![](https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/rviz.png)
 
 
 # Hardware-In-the-Loop (HIL) capabilities
