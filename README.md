@@ -7,8 +7,7 @@ A 4 wheeled miniature car was built, based on a SunFounder kit, in order to expe
 
 The project served as a basis for writing and publishing a paper in SIMUL 2020 : The Twelfth International Conference on Advances in System Simulation. [The paper is freely available here.](https://www.researchgate.net/publication/345008126_Mixed_Reality_Autonomous_Vehicle_Simulation_Implementation_of_a_Hardware-In-the-Loop_Architecture_at_a_Miniature_Scale)
 
-![](https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/articleimg.png | width=60)
-
+<img src="https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/articleimg.png" height="459" width="357">
 # Overview of the miniature car
 
 The car is controlled by a Raspberry PI4 running Ubuntu 16.04 and the Robot Operating System (ROS) middleware. It can be controlled manually with a keyboard, a custom made GUI or a PS3 controller. It has a camera and an ultrasonic sensor. It is capable of using the camera to detect an aruco marker at the back of another robot, and can follow it while maintaining a dynamically modifiable safe following distance. The ultrasonic sensor is used in case of emergency if the camera readings are unavailable and can engage an emergency braking. 
