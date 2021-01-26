@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classEdge.html" title="Edge with data needed to the Unity import " alt="" coords="157,5,209,32"/>
-<area shape="rect" id="node4" href="$structVertex.html" title="Vertex structure. The Vertex structure is mainly used as a information container (id and name contain..." alt="" coords="153,56,213,83"/>
-<area shape="rect" id="node5" href="$classVertexNode.html" title="Vertex class inside the Graph data structure. " alt="" coords="137,107,228,133"/>
-<area shape="rect" id="node3" href="$classEdgeAntColonyData.html" title="Edge with data for the Ant Colony Algorithm. " alt="" coords="276,5,417,32"/>
-</map>

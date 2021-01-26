@@ -1,4 +1,0 @@
-<map id="DistBetweenNodes" name="DistBetweenNodes">
-<area shape="rect" id="node2" href="$classDistanceComputation.html" title="Abstact class to computes the distance between two points in latitude and longitude coordinate system..." alt="" coords="5,5,153,32"/>
-<area shape="rect" id="node3" href="$classParser.html" title="Class providing an abstraction for the parsing of OSM file. " alt="" coords="180,5,240,32"/>
-</map>
