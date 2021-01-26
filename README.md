@@ -5,7 +5,7 @@ A 4 wheeled miniature car was built, based on a SunFounder kit, in order to expe
 
 #  The academic paper
 
-The project served as a basis for writing and publishing a paper in SIMUL 2020 : The Twelfth International Conference on Advances in System Simulation. [The paper is freely available here.](https://www.researchgate.net/publication/345008126_Mixed_Reality_Autonomous_Vehicle_Simulation_Implementation_of_a_Hardware-In-the-Loop_Architecture_at_a_Miniature_Scale)
+The project served as a basis for writing and publishing a paper in SIMUL 2020 : The Twelfth International Conference on Advances in System Simulation. [The paper is available for free here.](https://www.researchgate.net/publication/345008126_Mixed_Reality_Autonomous_Vehicle_Simulation_Implementation_of_a_Hardware-In-the-Loop_Architecture_at_a_Miniature_Scale)
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/articleimg.png" height="459" width="357">
