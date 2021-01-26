@@ -23,7 +23,7 @@ Miniature car following a wheeled robot with an Aruco marker             |  Came
 
 # Hardware-In-the-Loop (HIL) capabilities
 
-A 3D model of a car was modeled using Unity and a script was written to make it capable of executing commands coming from the ROS network.The camera feed from the simulated car in Unity was forwarded to the ROS network. This allows for a completly interchangeable behaviour between the real miniature car and its simulated counterpart. We observed different behaviour depending on wether the camera data was coming from the real car or from the simulation.
+A 3D model of a car was modeled using Unity and a script was written to make it capable of executing commands coming from the ROS network.The camera feed from the simulated car in Unity was forwarded to the ROS network. This allows for a completly interchangeable behaviour between the real miniature car and its simulated counterpart.
 
 
 <p align="center">
