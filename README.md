@@ -10,8 +10,19 @@ The project served as a basis for writing and publishing a paper in SIMUL 2020 :
 <p align="center">
     <img src="https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/articleimg.png" height="459" width="357">
 </p>
+
 # Overview of the miniature car
 
 The car is controlled by a Raspberry PI4 running Ubuntu 16.04 and the Robot Operating System (ROS) middleware. It can be controlled manually with a keyboard, a custom made GUI or a PS3 controller. It has a camera and an ultrasonic sensor. It is capable of using the camera to detect an aruco marker at the back of another robot, and can follow it while maintaining a dynamically modifiable safe following distance. The ultrasonic sensor is used in case of emergency if the camera readings are unavailable and can engage an emergency braking. 
 
 ![](https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/omniROS_and_robot.JPG)
+
+
+# Hardware-In-the-Loop (HIL) capabilities
+
+A 3D model of a car was modeled using Unity and a script was written to make it capable of executing commands coming from the ROS network.The camera feed from the simulated car in Unity was forwarded to the ROS network. This allows for a completly interchangeable behaviour between the real miniature car and its simulated counterpart. We observed different behaviour depending on wether the camera data was coming from the real car or from the simulation.
+
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/RobinBaruffa/Implementation-of-a-Hardware-In-the-Loop-architecture-at-a-miniature-scale-for-an-autonomous-vehicle/master/Documentation_and_misc/Merged_omniROS_and_robot.JPG" height="430" width="574">
+</p>
